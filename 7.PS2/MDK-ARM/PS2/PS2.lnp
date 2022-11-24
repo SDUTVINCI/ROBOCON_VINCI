@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"ps2\startup_stm32f103xb.o"
+"ps2\main.o"
+"ps2\gpio.o"
+"ps2\spi.o"
+"ps2\stm32f1xx_it.o"
+"ps2\stm32f1xx_hal_msp.o"
+"ps2\stm32f1xx_hal_gpio_ex.o"
+"ps2\stm32f1xx_hal_spi.o"
+"ps2\stm32f1xx_hal.o"
+"ps2\stm32f1xx_hal_rcc.o"
+"ps2\stm32f1xx_hal_rcc_ex.o"
+"ps2\stm32f1xx_hal_gpio.o"
+"ps2\stm32f1xx_hal_dma.o"
+"ps2\stm32f1xx_hal_cortex.o"
+"ps2\stm32f1xx_hal_pwr.o"
+"ps2\stm32f1xx_hal_flash.o"
+"ps2\stm32f1xx_hal_flash_ex.o"
+"ps2\stm32f1xx_hal_exti.o"
+"ps2\stm32f1xx_hal_tim.o"
+"ps2\stm32f1xx_hal_tim_ex.o"
+"ps2\system_stm32f1xx.o"
+"ps2\pstwo.o"
+"ps2\delay_user.o"
+--strict --scatter "PS2\PS2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PS2.map" -o PS2\PS2.axf
