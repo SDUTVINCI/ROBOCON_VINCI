@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"bluetoothtest\startup_stm32f407xx.o"
+"bluetoothtest\main.o"
+"bluetoothtest\gpio.o"
+"bluetoothtest\usart.o"
+"bluetoothtest\stm32f4xx_it.o"
+"bluetoothtest\stm32f4xx_hal_msp.o"
+"bluetoothtest\stm32f4xx_hal_tim.o"
+"bluetoothtest\stm32f4xx_hal_tim_ex.o"
+"bluetoothtest\stm32f4xx_hal_uart.o"
+"bluetoothtest\stm32f4xx_hal_rcc.o"
+"bluetoothtest\stm32f4xx_hal_rcc_ex.o"
+"bluetoothtest\stm32f4xx_hal_flash.o"
+"bluetoothtest\stm32f4xx_hal_flash_ex.o"
+"bluetoothtest\stm32f4xx_hal_flash_ramfunc.o"
+"bluetoothtest\stm32f4xx_hal_gpio.o"
+"bluetoothtest\stm32f4xx_hal_dma_ex.o"
+"bluetoothtest\stm32f4xx_hal_dma.o"
+"bluetoothtest\stm32f4xx_hal_pwr.o"
+"bluetoothtest\stm32f4xx_hal_pwr_ex.o"
+"bluetoothtest\stm32f4xx_hal_cortex.o"
+"bluetoothtest\stm32f4xx_hal.o"
+"bluetoothtest\stm32f4xx_hal_exti.o"
+"bluetoothtest\system_stm32f4xx.o"
+--strict --scatter "BluetoothTest\BluetoothTest.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BluetoothTest.map" -o BluetoothTest\BluetoothTest.axf
