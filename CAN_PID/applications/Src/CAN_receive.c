@@ -156,7 +156,7 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
 {
  uint32_t send_mail_box;
 	
- can_tx_message.StdId = 0x200;
+ can_tx_message.StdId = 0x1FF;
  can_tx_message.IDE = CAN_ID_STD;
  can_tx_message.RTR = CAN_RTR_DATA;
  can_tx_message.DLC = 0x08;
@@ -197,7 +197,7 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
 {
  uint32_t send_mail_box;
 	
- can_tx_message.StdId = 0x200;
+ can_tx_message.StdId = 0x1FF;
  can_tx_message.IDE = CAN_ID_STD;
  can_tx_message.RTR = CAN_RTR_DATA;
  can_tx_message.DLC = 0x08;
