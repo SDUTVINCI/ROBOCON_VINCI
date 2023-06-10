@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"605test\startup_stm32f103x6.o"
+"605test\main.o"
+"605test\gpio.o"
+"605test\usart.o"
+"605test\stm32f1xx_it.o"
+"605test\stm32f1xx_hal_msp.o"
+"605test\stm32f1xx_hal_gpio_ex.o"
+"605test\stm32f1xx_hal_tim.o"
+"605test\stm32f1xx_hal_tim_ex.o"
+"605test\stm32f1xx_hal_uart.o"
+"605test\stm32f1xx_hal.o"
+"605test\stm32f1xx_hal_rcc.o"
+"605test\stm32f1xx_hal_rcc_ex.o"
+"605test\stm32f1xx_hal_gpio.o"
+"605test\stm32f1xx_hal_dma.o"
+"605test\stm32f1xx_hal_cortex.o"
+"605test\stm32f1xx_hal_pwr.o"
+"605test\stm32f1xx_hal_flash.o"
+"605test\stm32f1xx_hal_flash_ex.o"
+"605test\stm32f1xx_hal_exti.o"
+"605test\system_stm32f1xx.o"
+"605test\imu605.o"
+--strict --scatter "605test\605test.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "605test.map" -o 605test\605test.axf
