@@ -72,8 +72,11 @@ typedef struct
 #define	Euler_Type  		 	0x53
 #define	Quaternion_Type 0x59
 
-void IMU_Read_Data(uint8_t *rx_buffer);
+#define IMU_OK 1
+#define IMU_Error 0
 
+bool_t IMU_Read_Euler(uint8_t *rx_buffer);
+uint8_t __SUMCRC(uint8_t *puchMsg, uint16_t usDataLen);
 
 #ifdef __cpluscplus
 }
