@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"hwt605_ttl_dma\startup_stm32f103x6.o"
+"hwt605_ttl_dma\main.o"
+"hwt605_ttl_dma\gpio.o"
+"hwt605_ttl_dma\dma.o"
+"hwt605_ttl_dma\usart.o"
+"hwt605_ttl_dma\stm32f1xx_it.o"
+"hwt605_ttl_dma\stm32f1xx_hal_msp.o"
+"hwt605_ttl_dma\stm32f1xx_hal_gpio_ex.o"
+"hwt605_ttl_dma\stm32f1xx_hal_tim.o"
+"hwt605_ttl_dma\stm32f1xx_hal_tim_ex.o"
+"hwt605_ttl_dma\stm32f1xx_hal_uart.o"
+"hwt605_ttl_dma\stm32f1xx_hal.o"
+"hwt605_ttl_dma\stm32f1xx_hal_rcc.o"
+"hwt605_ttl_dma\stm32f1xx_hal_rcc_ex.o"
+"hwt605_ttl_dma\stm32f1xx_hal_gpio.o"
+"hwt605_ttl_dma\stm32f1xx_hal_dma.o"
+"hwt605_ttl_dma\stm32f1xx_hal_cortex.o"
+"hwt605_ttl_dma\stm32f1xx_hal_pwr.o"
+"hwt605_ttl_dma\stm32f1xx_hal_flash.o"
+"hwt605_ttl_dma\stm32f1xx_hal_flash_ex.o"
+"hwt605_ttl_dma\stm32f1xx_hal_exti.o"
+"hwt605_ttl_dma\system_stm32f1xx.o"
+"hwt605_ttl_dma\imu605.o"
+--strict --scatter "HWT605_TTL_DMA\HWT605_TTL_DMA.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HWT605_TTL_DMA.map" -o HWT605_TTL_DMA\HWT605_TTL_DMA.axf

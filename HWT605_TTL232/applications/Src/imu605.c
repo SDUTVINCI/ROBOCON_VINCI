@@ -53,11 +53,12 @@ bool_t IMU_Read_Euler(uint8_t *rx_buffer)
 	{
 		if(rx_buffer_pre == 0x55 && rx_buffer[i] == 0x53)
 		{
-			rx_buffer_pre = rx_buffer[i];
 			rx_cnt = i - 1;
+			goto DATA_HEADER_CORRECT;
 		}
+		rx_buffer_pre = rx_buffer[i];
 	}
-	
+	DATA_HEADER_CORRECT:
 	if(rx_buffer[rx_cnt] != 0x55)
 	{
 		return IMU_Error;
