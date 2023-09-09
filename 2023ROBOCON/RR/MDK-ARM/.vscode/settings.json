@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "catch_task.h": "c",
+        "main.h": "c",
+        "include.h": "c",
+        "tim.h": "c",
+        "bsp_delay.h": "c",
+        "struct_typedef.h": "c",
+        "shoot_task.h": "c"
+    }
+}
