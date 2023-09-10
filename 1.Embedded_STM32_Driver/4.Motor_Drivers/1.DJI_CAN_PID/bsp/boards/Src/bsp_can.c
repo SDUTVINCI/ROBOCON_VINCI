@@ -29,7 +29,7 @@ void CAN1_Filter_Init(void)
     CAN_Filter_st.FilterMaskIdLow = 0x0000;
     CAN_Filter_st.FilterBank = 0;
     CAN_Filter_st.FilterFIFOAssignment = CAN_RX_FIFO0;
-	  HAL_CAN_ConfigFilter(&hcan1, &CAN_Filter_st);        //ÂË²¨Æ÷³õÊ¼»¯
+	  HAL_CAN_ConfigFilter(&hcan1, &CAN_Filter_st);        //æ»¤æ³¢å™¨åˆå§‹åŒ–
 }
 
 
@@ -43,9 +43,10 @@ void CAN2_Filter_Init(void)
     CAN_Filter_st.FilterIdLow = 0x0000;
     CAN_Filter_st.FilterMaskIdHigh = 0x0000;
     CAN_Filter_st.FilterMaskIdLow = 0x0000;
-    CAN_Filter_st.FilterBank = 0;
+    CAN_Filter_st.FilterBank = 14;
+    CAN_Filter_st.SlaveStartFilterBank = 14;
     CAN_Filter_st.FilterFIFOAssignment = CAN_RX_FIFO0;
-	  HAL_CAN_ConfigFilter(&hcan2, &CAN_Filter_st);        //ÂË²¨Æ÷³õÊ¼»¯
+	  HAL_CAN_ConfigFilter(&hcan2, &CAN_Filter_st);        //æ»¤æ³¢å™¨åˆå§‹åŒ–
 }
 
 
