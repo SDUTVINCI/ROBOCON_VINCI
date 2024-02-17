@@ -25,7 +25,7 @@ float motor_position_2006_pid[3] = {0.2, 0, 0};
     }
 
 
-//底盘电机PID初始化
+//PID初始化
 void PID_devices_Init(void)
 {
 	for(int i=0;i<4;i++)
