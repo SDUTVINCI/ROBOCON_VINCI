@@ -7,10 +7,10 @@ can_pid_cpp/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h \
   ..\Drivers\CMSIS\Include\core_cm4.h \
   C:\Program\ Files\Arm\KeilMDK\Keil_v5\ARM\ARMCLANG\include\stdint.h \
-  C:\UserFolder\XiaomiCloud\Work\Source\STM32_Projects\N47_CAN_PID_CPP\Drivers\CMSIS\Include\cmsis_version.h \
-  C:\UserFolder\XiaomiCloud\Work\Source\STM32_Projects\N47_CAN_PID_CPP\Drivers\CMSIS\Include\cmsis_compiler.h \
-  C:\UserFolder\XiaomiCloud\Work\Source\STM32_Projects\N47_CAN_PID_CPP\Drivers\CMSIS\Include\cmsis_armclang.h \
-  C:\UserFolder\XiaomiCloud\Work\Source\STM32_Projects\N47_CAN_PID_CPP\Drivers\CMSIS\Include\mpu_armv7.h \
+  C:\UserFolder\XiaomiCloud\Work\Source\GitHub\SDUT_VinciRobot\1.Embedded_STM32_Driver\CPP\4.Motor_Drivers\N1_CAN_PID_CPP\Drivers\CMSIS\Include\cmsis_version.h \
+  C:\UserFolder\XiaomiCloud\Work\Source\GitHub\SDUT_VinciRobot\1.Embedded_STM32_Driver\CPP\4.Motor_Drivers\N1_CAN_PID_CPP\Drivers\CMSIS\Include\cmsis_compiler.h \
+  C:\UserFolder\XiaomiCloud\Work\Source\GitHub\SDUT_VinciRobot\1.Embedded_STM32_Driver\CPP\4.Motor_Drivers\N1_CAN_PID_CPP\Drivers\CMSIS\Include\cmsis_armclang.h \
+  C:\UserFolder\XiaomiCloud\Work\Source\GitHub\SDUT_VinciRobot\1.Embedded_STM32_Driver\CPP\4.Motor_Drivers\N1_CAN_PID_CPP\Drivers\CMSIS\Include\mpu_armv7.h \
   ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
   C:\Program\ Files\Arm\KeilMDK\Keil_v5\ARM\ARMCLANG\include\stddef.h \
@@ -29,4 +29,5 @@ can_pid_cpp/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
-  ..\Core\Inc\can.h ..\Core\Inc\tim.h ..\Core\Inc\gpio.h
+  ..\Core\Inc\can.h ..\Core\Inc\tim.h ..\Core\Inc\gpio.h \
+  ..\Core\Inc\startup_main.h ..\bsp\boards\Inc\struct_typedef.h

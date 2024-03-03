@@ -2,6 +2,7 @@
 #include "bsp_delay.h"
 #include "can_receive.h"
 #include "pid_user.h"
+#include "tim.h"
 
 void startup_main(void)
 {
@@ -19,7 +20,10 @@ void startup_main(void)
 	can_bus.bsp.CAN_Start(&hcan1);
 	can_bus.bsp.CAN_Start(&hcan2);
 
-
+//开启定时器中断
+	HAL_TIM_Base_Start_IT(&htim7);
+//此程序为了演示，所以在定时器中断回调和死循环里写了相同的代码
+//(所以在跑此程序时，请注释掉for(;;)死循环，或者关闭定时器中断。)
 	
 	
 #if isRTOS==0    	//如果是裸机开发
@@ -27,7 +31,7 @@ void startup_main(void)
 	{
 		
 		//本次程序采用在定时器中断里进行控制电机，而非主函数，请看定时器中断回调函数里的。
-		//下方写的是等同于定时器中断中的内容实现。
+		//下方写的是等同于定时器中断中的内容实现。(所以在跑此程序时，请注释掉该死循环，或者关闭定时器中断。)
 		
 		
 		//开环，使CAN1的1号电机以1500的相对电流值进行转动
