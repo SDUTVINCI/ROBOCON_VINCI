@@ -1,17 +1,17 @@
 #include "can_receive.h"
 #include "can.h"
-/*******¶ÔÏó*******/
+/*******å¯¹è±¡*******/
 CAN_BUS can_bus;
 
 
 /**
- * @brief       CAN1·¢ËÍº¯Êı(Ç°4¸öµç»ú)
- * @param       motor1£º¸øÊı×éĞòºÅÎª0£¨µçµ÷IDÎª1£©µÄµç»ú·¢ËÍÏà¶ÔµçÁ÷Öµ
- * @param       motor2£º¸øÊı×éĞòºÅÎª1£¨µçµ÷IDÎª2£©µÄµç»ú·¢ËÍÏà¶ÔµçÁ÷Öµ
- * @param       motor3£º¸øÊı×éĞòºÅÎª2£¨µçµ÷IDÎª3£©µÄµç»ú·¢ËÍÏà¶ÔµçÁ÷Öµ
- * @param       motor4£º¸øÊı×éĞòºÅÎª3£¨µçµ÷IDÎª4£©µÄµç»ú·¢ËÍÏà¶ÔµçÁ÷Öµ
+ * @brief       CAN1å‘é€å‡½æ•°(å‰4ä¸ªç”µæœº)
+ * @param       motor1ï¼šç»™æ•°ç»„åºå·ä¸º0ï¼ˆç”µè°ƒIDä¸º1ï¼‰çš„ç”µæœºå‘é€ç›¸å¯¹ç”µæµå€¼
+ * @param       motor2ï¼šç»™æ•°ç»„åºå·ä¸º1ï¼ˆç”µè°ƒIDä¸º2ï¼‰çš„ç”µæœºå‘é€ç›¸å¯¹ç”µæµå€¼
+ * @param       motor3ï¼šç»™æ•°ç»„åºå·ä¸º2ï¼ˆç”µè°ƒIDä¸º3ï¼‰çš„ç”µæœºå‘é€ç›¸å¯¹ç”µæµå€¼
+ * @param       motor4ï¼šç»™æ•°ç»„åºå·ä¸º3ï¼ˆç”µè°ƒIDä¸º4ï¼‰çš„ç”µæœºå‘é€ç›¸å¯¹ç”µæµå€¼
  * @retval      void
- * @note        ÎŞ
+ * @note        æ— 
  */
 void CAN_BUS::CMD::CAN1_Front(int16_t motor1, int16_t motor2, int16_t motor3, int16_t motor4)
 {
@@ -37,13 +37,13 @@ void CAN_BUS::CMD::CAN1_Front(int16_t motor1, int16_t motor2, int16_t motor3, in
 
 
 /**
- * @brief       CAN1·¢ËÍº¯Êı(ºó4¸öµç»ú)
- * @param       motor1£º¸øÊı×éĞòºÅÎª4£¨µçµ÷IDÎª5£©µÄµç»ú·¢ËÍÏà¶ÔµçÁ÷Öµ
- * @param       motor2£º¸øÊı×éĞòºÅÎª5£¨µçµ÷IDÎª6£©µÄµç»ú·¢ËÍÏà¶ÔµçÁ÷Öµ
- * @param       motor3£º¸øÊı×éĞòºÅÎª6£¨µçµ÷IDÎª7£©µÄµç»ú·¢ËÍÏà¶ÔµçÁ÷Öµ
- * @param       motor4£º¸øÊı×éĞòºÅÎª7£¨µçµ÷IDÎª8£©µÄµç»ú·¢ËÍÏà¶ÔµçÁ÷Öµ
+ * @brief       CAN1å‘é€å‡½æ•°(å4ä¸ªç”µæœº)
+ * @param       motor1ï¼šç»™æ•°ç»„åºå·ä¸º4ï¼ˆç”µè°ƒIDä¸º5ï¼‰çš„ç”µæœºå‘é€ç›¸å¯¹ç”µæµå€¼
+ * @param       motor2ï¼šç»™æ•°ç»„åºå·ä¸º5ï¼ˆç”µè°ƒIDä¸º6ï¼‰çš„ç”µæœºå‘é€ç›¸å¯¹ç”µæµå€¼
+ * @param       motor3ï¼šç»™æ•°ç»„åºå·ä¸º6ï¼ˆç”µè°ƒIDä¸º7ï¼‰çš„ç”µæœºå‘é€ç›¸å¯¹ç”µæµå€¼
+ * @param       motor4ï¼šç»™æ•°ç»„åºå·ä¸º7ï¼ˆç”µè°ƒIDä¸º8ï¼‰çš„ç”µæœºå‘é€ç›¸å¯¹ç”µæµå€¼
  * @retval      void
- * @note        ÎŞ
+ * @note        æ— 
  */
  void CAN_BUS::CMD::CAN1_Behind(int16_t motor5, int16_t motor6, int16_t motor7, int16_t motor8)
 {
@@ -68,13 +68,13 @@ void CAN_BUS::CMD::CAN1_Front(int16_t motor1, int16_t motor2, int16_t motor3, in
 
 
 /**
- * @brief       CAN2·¢ËÍº¯Êı(Ç°4¸öµç»ú)
- * @param       motor1£º¸øÊı×éĞòºÅÎª0£¨µçµ÷IDÎª1£©µÄµç»ú·¢ËÍÏà¶ÔµçÁ÷Öµ
- * @param       motor2£º¸øÊı×éĞòºÅÎª1£¨µçµ÷IDÎª2£©µÄµç»ú·¢ËÍÏà¶ÔµçÁ÷Öµ
- * @param       motor3£º¸øÊı×éĞòºÅÎª2£¨µçµ÷IDÎª3£©µÄµç»ú·¢ËÍÏà¶ÔµçÁ÷Öµ
- * @param       motor4£º¸øÊı×éĞòºÅÎª3£¨µçµ÷IDÎª4£©µÄµç»ú·¢ËÍÏà¶ÔµçÁ÷Öµ
+ * @brief       CAN2å‘é€å‡½æ•°(å‰4ä¸ªç”µæœº)
+ * @param       motor1ï¼šç»™æ•°ç»„åºå·ä¸º0ï¼ˆç”µè°ƒIDä¸º1ï¼‰çš„ç”µæœºå‘é€ç›¸å¯¹ç”µæµå€¼
+ * @param       motor2ï¼šç»™æ•°ç»„åºå·ä¸º1ï¼ˆç”µè°ƒIDä¸º2ï¼‰çš„ç”µæœºå‘é€ç›¸å¯¹ç”µæµå€¼
+ * @param       motor3ï¼šç»™æ•°ç»„åºå·ä¸º2ï¼ˆç”µè°ƒIDä¸º3ï¼‰çš„ç”µæœºå‘é€ç›¸å¯¹ç”µæµå€¼
+ * @param       motor4ï¼šç»™æ•°ç»„åºå·ä¸º3ï¼ˆç”µè°ƒIDä¸º4ï¼‰çš„ç”µæœºå‘é€ç›¸å¯¹ç”µæµå€¼
  * @retval      void
- * @note        ÎŞ
+ * @note        æ— 
  */
  void CAN_BUS::CMD::CAN2_Front(int16_t motor1, int16_t motor2, int16_t motor3, int16_t motor4)
 {
@@ -98,13 +98,13 @@ void CAN_BUS::CMD::CAN1_Front(int16_t motor1, int16_t motor2, int16_t motor3, in
 }
 
 /**
- * @brief       CAN1·¢ËÍº¯Êı(ºó4¸öµç»ú)
- * @param       motor1£º¸øÊı×éĞòºÅÎª4£¨µçµ÷IDÎª5£©µÄµç»ú·¢ËÍÏà¶ÔµçÁ÷Öµ
- * @param       motor2£º¸øÊı×éĞòºÅÎª5£¨µçµ÷IDÎª6£©µÄµç»ú·¢ËÍÏà¶ÔµçÁ÷Öµ
- * @param       motor3£º¸øÊı×éĞòºÅÎª6£¨µçµ÷IDÎª7£©µÄµç»ú·¢ËÍÏà¶ÔµçÁ÷Öµ
- * @param       motor4£º¸øÊı×éĞòºÅÎª7£¨µçµ÷IDÎª8£©µÄµç»ú·¢ËÍÏà¶ÔµçÁ÷Öµ
+ * @brief       CAN1å‘é€å‡½æ•°(å4ä¸ªç”µæœº)
+ * @param       motor1ï¼šç»™æ•°ç»„åºå·ä¸º4ï¼ˆç”µè°ƒIDä¸º5ï¼‰çš„ç”µæœºå‘é€ç›¸å¯¹ç”µæµå€¼
+ * @param       motor2ï¼šç»™æ•°ç»„åºå·ä¸º5ï¼ˆç”µè°ƒIDä¸º6ï¼‰çš„ç”µæœºå‘é€ç›¸å¯¹ç”µæµå€¼
+ * @param       motor3ï¼šç»™æ•°ç»„åºå·ä¸º6ï¼ˆç”µè°ƒIDä¸º7ï¼‰çš„ç”µæœºå‘é€ç›¸å¯¹ç”µæµå€¼
+ * @param       motor4ï¼šç»™æ•°ç»„åºå·ä¸º7ï¼ˆç”µè°ƒIDä¸º8ï¼‰çš„ç”µæœºå‘é€ç›¸å¯¹ç”µæµå€¼
  * @retval      void
- * @note        ÎŞ
+ * @note        æ— 
  */
  void CAN_BUS::CMD::CAN2_Behind(int16_t motor5, int16_t motor6, int16_t motor7, int16_t motor8)
 {
@@ -129,10 +129,10 @@ void CAN_BUS::CMD::CAN1_Front(int16_t motor1, int16_t motor2, int16_t motor3, in
 
 extern "C"
 /**
- * @brief       »Øµ÷º¯Êı£¬¶¨Ê±Æ÷ÖĞ¶Ï·şÎñº¯Êıµ÷ÓÃ
- * @param       hcan£º´¥·¢ÖĞ¶ÏµÄCANÍ¨ĞÅ¾ä±ú
+ * @brief       å›è°ƒå‡½æ•°ï¼Œå®šæ—¶å™¨ä¸­æ–­æœåŠ¡å‡½æ•°è°ƒç”¨
+ * @param       hcanï¼šè§¦å‘ä¸­æ–­çš„CANé€šä¿¡å¥æŸ„
  * @retval      void
- * @note        ¸Ãº¯ÊıÓÉÖĞ¶Ï¹«¹²·şÎñº¯Êıµ÷ÓÃ£¬²»ÓÃÓÃ»§È¥µ÷ÓÃ¡£ÇÒÎªÒ»¸öÈõº¯Êı£¬ËùÒÔÔÚC++ÖĞÒªÔÚ¸Ãº¯ÊıÇ°Ãæ¼ÓÉÏextern "C"£¬»òÖ±½ÓÓÃextern "C"{}À¨ÆğÀ´
+ * @note        è¯¥å‡½æ•°ç”±ä¸­æ–­å…¬å…±æœåŠ¡å‡½æ•°è°ƒç”¨ï¼Œä¸ç”¨ç”¨æˆ·å»è°ƒç”¨ã€‚ä¸”ä¸ºä¸€ä¸ªå¼±å‡½æ•°ï¼Œæ‰€ä»¥åœ¨C++ä¸­è¦åœ¨è¯¥å‡½æ•°å‰é¢åŠ ä¸Šextern "C"ï¼Œæˆ–ç›´æ¥ç”¨extern "C"{}æ‹¬èµ·æ¥
  */
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
 {
@@ -199,11 +199,11 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
 }
 
 /**
- * @brief       ´¦Àí±àÂëÆ÷Êı¾İ»ñÈ¡µç»úĞÅÏ¢º¯Êı
- * @param       ptr£º@motor_measure_tÀàĞÍ¾ä±ú£¬´¢´æ´¦ÀíºóµÄµç»ú×´Ì¬ĞÅÏ¢
- * @param       data£ºCANÍ¨ĞÅ½ÓÊÕµ½µç»ú·¢À´µÄÔ­Êı¾İ
+ * @brief       å¤„ç†ç¼–ç å™¨æ•°æ®è·å–ç”µæœºä¿¡æ¯å‡½æ•°
+ * @param       ptrï¼š@motor_measure_tç±»å‹å¥æŸ„ï¼Œå‚¨å­˜å¤„ç†åçš„ç”µæœºçŠ¶æ€ä¿¡æ¯
+ * @param       dataï¼šCANé€šä¿¡æ¥æ”¶åˆ°ç”µæœºå‘æ¥çš„åŸæ•°æ®
  * @retval      void
- * @note        ÎŞ
+ * @note        æ— 
  */
 void CAN_BUS::DJI_ENCODER::get_motor_measure(motor_measure_t *ptr,uint8_t data[])                                                     
 {   
@@ -211,7 +211,7 @@ void CAN_BUS::DJI_ENCODER::get_motor_measure(motor_measure_t *ptr,uint8_t data[]
         (ptr)->angle = data[0] << 8 | data[1];           
         (ptr)->speed_rpm = data[2] << 8 | data[3];     
         (ptr)->given_current = data[4] << 8 | data[5]; 
-        (ptr)->temperate = data[6];                                              
+        (ptr)->temperature = data[6];                                              
 //				((ptr)->angle) = (int32_t)(((ptr)->ecd) - ((ptr)->last_ecd));
 
 					if(ptr->angle - ptr->last_angle > 4096)
@@ -222,11 +222,11 @@ void CAN_BUS::DJI_ENCODER::get_motor_measure(motor_measure_t *ptr,uint8_t data[]
 }
 
 /**
- * @brief       ´¦Àí±àÂëÆ÷Êı¾İ»ñÈ¡µç»ú¸Õ¿ªÊ¼µÄ½Ç¶È³õÊ¼Öµº¯Êı
- * @param       ptr£º@motor_measure_tÀàĞÍ¾ä±ú£¬´¢´æ´¦ÀíºóµÄµç»ú×´Ì¬ĞÅÏ¢
- * @param       data£ºCANÍ¨ĞÅ½ÓÊÕµ½µç»ú·¢À´µÄÔ­Êı¾İ
+ * @brief       å¤„ç†ç¼–ç å™¨æ•°æ®è·å–ç”µæœºåˆšå¼€å§‹çš„è§’åº¦åˆå§‹å€¼å‡½æ•°
+ * @param       ptrï¼š@motor_measure_tç±»å‹å¥æŸ„ï¼Œå‚¨å­˜å¤„ç†åçš„ç”µæœºçŠ¶æ€ä¿¡æ¯
+ * @param       dataï¼šCANé€šä¿¡æ¥æ”¶åˆ°ç”µæœºå‘æ¥çš„åŸæ•°æ®
  * @retval      void
- * @note        ¸Ãº¯ÊıÊÇ½«¾ø¶Ô±àÂëÆ÷×ª»¯ÎªÔöÁ¿±àÂëÆ÷µÄ¹Ø¼ü£¬»ñÈ¡ÁËµç»úÍ¨µçÊ±µÄ½Ç¶ÈÖµ
+ * @note        è¯¥å‡½æ•°æ˜¯å°†ç»å¯¹ç¼–ç å™¨è½¬åŒ–ä¸ºå¢é‡ç¼–ç å™¨çš„å…³é”®ï¼Œè·å–äº†ç”µæœºé€šç”µæ—¶çš„è§’åº¦å€¼
  */
 void CAN_BUS::DJI_ENCODER::get_moto_offset(motor_measure_t *ptr, uint8_t data[])
 {
@@ -239,23 +239,23 @@ void CAN_BUS::DJI_ENCODER::get_moto_offset(motor_measure_t *ptr, uint8_t data[])
 
 
 /**
- * @brief       ´¦Àíµç»ú½Ç¶ÈÖµ
- * @param       p£º@motor_measure_tÀàĞÍ¾ä±ú£¬´¢´æ´¦ÀíºóµÄµç»ú×´Ì¬ĞÅÏ¢
+ * @brief       å¤„ç†ç”µæœºè§’åº¦å€¼
+ * @param       pï¼š@motor_measure_tç±»å‹å¥æŸ„ï¼Œå‚¨å­˜å¤„ç†åçš„ç”µæœºçŠ¶æ€ä¿¡æ¯
  * @retval      void
- * @note        ¸Ãº¯ÊıÃ»ÓĞ±»µ÷ÓÃ£¬ÔİÊ±Ã»ÓÃ
+ * @note        è¯¥å‡½æ•°æ²¡æœ‰è¢«è°ƒç”¨ï¼Œæš‚æ—¶æ²¡ç”¨
  */
 void CAN_BUS::DJI_ENCODER::get_total_angle(motor_measure_t *p)
 {
 	
 	int res1, res2, delta;
-	if(p->angle < p->last_angle){			//¿ÉÄÜµÄÇé¿ö
-		res1 = p->angle + 8192 - p->last_angle;	//Õı×ª£¬delta=+
-		res2 = p->angle - p->last_angle;				//·´×ª	delta=-
+	if(p->angle < p->last_angle){			//å¯èƒ½çš„æƒ…å†µ
+		res1 = p->angle + 8192 - p->last_angle;	//æ­£è½¬ï¼Œdelta=+
+		res2 = p->angle - p->last_angle;				//åè½¬	delta=-
 	}else{	//angle > last
-		res1 = p->angle - 8192 - p->last_angle ;//·´×ª	delta -
-		res2 = p->angle - p->last_angle;				//Õı×ª	delta +
+		res1 = p->angle - 8192 - p->last_angle ;//åè½¬	delta -
+		res2 = p->angle - p->last_angle;				//æ­£è½¬	delta +
 	}
-	//²»¹ÜÕı·´×ª£¬¿Ï¶¨ÊÇ×ªµÄ½Ç¶ÈĞ¡µÄÄÇ¸öÊÇÕæµÄ
+	//ä¸ç®¡æ­£åè½¬ï¼Œè‚¯å®šæ˜¯è½¬çš„è§’åº¦å°çš„é‚£ä¸ªæ˜¯çœŸçš„
 	if(ABS(res1)<ABS(res2))
 		delta = res1;
 	else
