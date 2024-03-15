@@ -32,7 +32,7 @@ typedef struct
  uint16_t angle;
  int16_t speed_rpm;
  int16_t given_current;
- uint8_t temperate;
+ uint8_t temperature;
  int16_t last_angle;
 		int32_t total_angle;
 		int32_t	round_cnt;
