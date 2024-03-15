@@ -29,15 +29,15 @@ typedef enum
 
 typedef struct
 {
- uint16_t angle;
- int16_t speed_rpm;
- int16_t given_current;
- uint8_t temperature;
- int16_t last_angle;
-		int32_t total_angle;
-		int32_t	round_cnt;
-		uint16_t offset_angle;
-		uint32_t			msg_cnt;
+ uint16_t angle;  //当前绝对角度
+ int16_t speed_rpm;   //速度（转/分钟)
+ int16_t given_current;   //电流
+ uint8_t temperature;    //温度
+ int16_t last_angle;     //上一次的绝对角度
+		int32_t total_angle;    //总的相对角度
+		int32_t	round_cnt;       //电机的转子旋转的圈数
+		uint16_t offset_angle;  //补偿的绝对角度（电机刚上电时的角度)
+		uint32_t			msg_cnt;     //收到消息的次数（用于在电机稳定时捕获电机补偿角度值)
 } motor_measure_t;
 
 
