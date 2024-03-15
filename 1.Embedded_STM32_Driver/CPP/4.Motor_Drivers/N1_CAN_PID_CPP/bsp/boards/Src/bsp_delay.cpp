@@ -4,97 +4,97 @@
     #include "cmsis_os.h"
 #endif
 
-static uint32_t g_fac_us = 0;       /* usÑÓÊ±±¶³ËÊı */
+static uint32_t g_fac_us = 0;       /* uså»¶æ—¶å€ä¹˜æ•° */
 
-/*******¶ÔÏó*******/
+/*******å¯¹è±¡*******/
 BSP_Delay bsp_delay;
 
 /**
- * @brief       ³õÊ¼»¯ÑÓ³Ùº¯Êı
- * @param       sysclk: ÏµÍ³Ê±ÖÓÆµÂÊ, ¼´CPUÆµÂÊ(HCLK)
- * @retval      ÎŞ
+ * @brief       åˆå§‹åŒ–å»¶è¿Ÿå‡½æ•°
+ * @param       sysclk: ç³»ç»Ÿæ—¶é’Ÿé¢‘ç‡, å³CPUé¢‘ç‡(HCLK)
+ * @retval      æ— 
  */
  void BSP_Delay::F1::Init(uint16_t sysclk)
 {
-    SysTick->CTRL = 0;                                          /* ÇåSystick×´Ì¬£¬ÒÔ±ãÏÂÒ»²½ÖØÉè£¬Èç¹ûÕâÀï¿ªÁËÖĞ¶Ï»á¹Ø±ÕÆäÖĞ¶Ï */
-    HAL_SYSTICK_CLKSourceConfig(SYSTICK_CLKSOURCE_HCLK_DIV8);   /* SYSTICKÊ¹ÓÃÄÚºËÊ±ÖÓÔ´8·ÖÆµ,ÒòsystickµÄ¼ÆÊıÆ÷×î´óÖµÖ»ÓĞ2^24 */
+    SysTick->CTRL = 0;                                          /* æ¸…SystickçŠ¶æ€ï¼Œä»¥ä¾¿ä¸‹ä¸€æ­¥é‡è®¾ï¼Œå¦‚æœè¿™é‡Œå¼€äº†ä¸­æ–­ä¼šå…³é—­å…¶ä¸­æ–­ */
+    HAL_SYSTICK_CLKSourceConfig(SYSTICK_CLKSOURCE_HCLK_DIV8);   /* SYSTICKä½¿ç”¨å†…æ ¸æ—¶é’Ÿæº8åˆ†é¢‘,å› systickçš„è®¡æ•°å™¨æœ€å¤§å€¼åªæœ‰2^24 */
 
-    g_fac_us = sysclk / 8;                                      /* ²»ÂÛÊÇ·ñÊ¹ÓÃOS,g_fac_us¶¼ĞèÒªÊ¹ÓÃ,×÷Îª1usµÄ»ù´¡Ê±»ù */
+    g_fac_us = sysclk / 8;                                      /* ä¸è®ºæ˜¯å¦ä½¿ç”¨OS,g_fac_uséƒ½éœ€è¦ä½¿ç”¨,ä½œä¸º1usçš„åŸºç¡€æ—¶åŸº */
 }
 
 /**
- * @brief       ÑÓÊ±nus
- * @param       nus: ÒªÑÓÊ±µÄusÊı.
- * @note        ×¢Òâ: nusµÄÖµ,²»Òª´óÓÚ1864135us(×î´óÖµ¼´2^24 / g_fac_us  @g_fac_us = 9)
- * @retval      ÎŞ
+ * @brief       å»¶æ—¶nus
+ * @param       nus: è¦å»¶æ—¶çš„usæ•°.
+ * @note        æ³¨æ„: nusçš„å€¼,ä¸è¦å¤§äº1864135us(æœ€å¤§å€¼å³2^24 / g_fac_us  @g_fac_us = 9)
+ * @retval      æ— 
  */
 void BSP_Delay::F1::us(uint32_t nus)
 {
     uint32_t temp;
-    SysTick->LOAD = nus * g_fac_us; /* Ê±¼ä¼ÓÔØ */
-    SysTick->VAL = 0x00;            /* Çå¿Õ¼ÆÊıÆ÷ */
-    SysTick->CTRL |= 1 << 0 ;       /* ¿ªÊ¼µ¹Êı */
+    SysTick->LOAD = nus * g_fac_us; /* æ—¶é—´åŠ è½½ */
+    SysTick->VAL = 0x00;            /* æ¸…ç©ºè®¡æ•°å™¨ */
+    SysTick->CTRL |= 1 << 0 ;       /* å¼€å§‹å€’æ•° */
 
     do
     {
         temp = SysTick->CTRL;
-    } while ((temp & 0x01) && !(temp & (1 << 16))); /* CTRL.ENABLEÎ»±ØĞëÎª1, ²¢µÈ´ıÊ±¼äµ½´ï */
+    } while ((temp & 0x01) && !(temp & (1 << 16))); /* CTRL.ENABLEä½å¿…é¡»ä¸º1, å¹¶ç­‰å¾…æ—¶é—´åˆ°è¾¾ */
 
-    SysTick->CTRL &= ~(1 << 0) ;    /* ¹Ø±ÕSYSTICK */
-    SysTick->VAL = 0X00;            /* Çå¿Õ¼ÆÊıÆ÷ */
+    SysTick->CTRL &= ~(1 << 0) ;    /* å…³é—­SYSTICK */
+    SysTick->VAL = 0X00;            /* æ¸…ç©ºè®¡æ•°å™¨ */
 }
 
 /**
- * @brief       ÑÓÊ±nms
- * @param       nms: ÒªÑÓÊ±µÄmsÊı (0< nms <= 65535)
- * @retval      ÎŞ
+ * @brief       å»¶æ—¶nms
+ * @param       nms: è¦å»¶æ—¶çš„msæ•° (0< nms <= 65535)
+ * @retval      æ— 
  */
 void BSP_Delay::F1::ms(uint16_t nms)
 {
-    uint32_t repeat = nms / 1000;   /*  ÕâÀïÓÃ1000,ÊÇ¿¼ÂÇµ½¿ÉÄÜÓĞ³¬ÆµÓ¦ÓÃ,
-                                     *  ±ÈÈç128MhzµÄÊ±ºò, delay_us×î´óÖ»ÄÜÑÓÊ±1048576us×óÓÒÁË
+    uint32_t repeat = nms / 1000;   /*  è¿™é‡Œç”¨1000,æ˜¯è€ƒè™‘åˆ°å¯èƒ½æœ‰è¶…é¢‘åº”ç”¨,
+                                     *  æ¯”å¦‚128Mhzçš„æ—¶å€™, delay_usæœ€å¤§åªèƒ½å»¶æ—¶1048576uså·¦å³äº†
                                      */
     uint32_t remain = nms % 1000;
 
     while (repeat)
     {
-        us(1000 * 1000);      /* ÀûÓÃdelay_us ÊµÏÖ 1000ms ÑÓÊ± */
+        us(1000 * 1000);      /* åˆ©ç”¨delay_us å®ç° 1000ms å»¶æ—¶ */
         repeat--;
     }
 
     if (remain)
     {
-        us(remain * 1000);    /* ÀûÓÃdelay_us, °ÑÎ²ÊıÑÓÊ±(remain ms)¸ø×öÁË */
+        us(remain * 1000);    /* åˆ©ç”¨delay_us, æŠŠå°¾æ•°å»¶æ—¶(remain ms)ç»™åšäº† */
     }
 }
 
 
 
 /**
- * @brief     ³õÊ¼»¯ÑÓ³Ùº¯Êı
- * @param     sysclk: ÏµÍ³Ê±ÖÓÆµÂÊ, ¼´CPUÆµÂÊ(rcc_c_ck), 168MHz
- * @retval    ÎŞ
+ * @brief     åˆå§‹åŒ–å»¶è¿Ÿå‡½æ•°
+ * @param     sysclk: ç³»ç»Ÿæ—¶é’Ÿé¢‘ç‡, å³CPUé¢‘ç‡(rcc_c_ck), 168MHz
+ * @retval    æ— 
  */  
 void BSP_Delay::F4::Init(uint16_t sysclk)
 {
-    HAL_SYSTICK_CLKSourceConfig(SYSTICK_CLKSOURCE_HCLK);/* SYSTICKÊ¹ÓÃÍâ²¿Ê±ÖÓÔ´,ÆµÂÊÎªHCLK */
-    g_fac_us = sysclk;                                  /* ²»ÂÛÊÇ·ñÊ¹ÓÃOS,g_fac_us¶¼ĞèÒªÊ¹ÓÃ */
+    HAL_SYSTICK_CLKSourceConfig(SYSTICK_CLKSOURCE_HCLK);/* SYSTICKä½¿ç”¨å¤–éƒ¨æ—¶é’Ÿæº,é¢‘ç‡ä¸ºHCLK */
+    g_fac_us = sysclk;                                  /* ä¸è®ºæ˜¯å¦ä½¿ç”¨OS,g_fac_uséƒ½éœ€è¦ä½¿ç”¨ */
 }
 
 
 /**
- * @brief       ÑÓÊ±nus
- * @param       nus: ÒªÑÓÊ±µÄusÊı.
- * @note        nusÈ¡Öµ·¶Î§ : 0~190887435(×î´óÖµ¼´ 2^32 / fac_us @fac_us = 21)
- * @retval      ÎŞ
+ * @brief       å»¶æ—¶nus
+ * @param       nus: è¦å»¶æ—¶çš„usæ•°.
+ * @note        nuså–å€¼èŒƒå›´ : 0~190887435(æœ€å¤§å€¼å³ 2^32 / fac_us @fac_us = 21)
+ * @retval      æ— 
  */
 void BSP_Delay::F4::us(uint32_t nus)
 {
     uint32_t ticks;
     uint32_t told, tnow, tcnt = 0;
-    uint32_t reload = SysTick->LOAD;        /* LOADµÄÖµ */
-    ticks = nus * g_fac_us;                 /* ĞèÒªµÄ½ÚÅÄÊı */
-    told = SysTick->VAL;                    /* ¸Õ½øÈëÊ±µÄ¼ÆÊıÆ÷Öµ */
+    uint32_t reload = SysTick->LOAD;        /* LOADçš„å€¼ */
+    ticks = nus * g_fac_us;                 /* éœ€è¦çš„èŠ‚æ‹æ•° */
+    told = SysTick->VAL;                    /* åˆšè¿›å…¥æ—¶çš„è®¡æ•°å™¨å€¼ */
     while (1)
     {
         tnow = SysTick->VAL;
@@ -102,7 +102,7 @@ void BSP_Delay::F4::us(uint32_t nus)
         {
             if (tnow < told)
             {
-                tcnt += told - tnow;        /* ÕâÀï×¢ÒâÒ»ÏÂSYSTICKÊÇÒ»¸öµİ¼õµÄ¼ÆÊıÆ÷¾Í¿ÉÒÔÁË */
+                tcnt += told - tnow;        /* è¿™é‡Œæ³¨æ„ä¸€ä¸‹SYSTICKæ˜¯ä¸€ä¸ªé€’å‡çš„è®¡æ•°å™¨å°±å¯ä»¥äº† */
             }
             else 
             {
@@ -111,63 +111,63 @@ void BSP_Delay::F4::us(uint32_t nus)
             told = tnow;
             if (tcnt >= ticks)
             {
-                break;                      /* Ê±¼ä³¬¹ı/µÈÓÚÒªÑÓ³ÙµÄÊ±¼ä,ÔòÍË³ö */
+                break;                      /* æ—¶é—´è¶…è¿‡/ç­‰äºè¦å»¶è¿Ÿçš„æ—¶é—´,åˆ™é€€å‡º */
             }
         }
     }
 }
 
 /**
- * @brief       ÑÓÊ±nms
- * @param       nms: ÒªÑÓÊ±µÄmsÊı (0< nms <= 65535)
- * @retval      ÎŞ
+ * @brief       å»¶æ—¶nms
+ * @param       nms: è¦å»¶æ—¶çš„msæ•° (0< nms <= 65535)
+ * @retval      æ— 
  */
 void BSP_Delay::F4::ms(uint16_t nms)
 {
-    uint32_t repeat = nms / 540;    /*  ÕâÀïÓÃ540,ÊÇ¿¼ÂÇµ½¿ÉÄÜÓĞ³¬ÆµÓ¦ÓÃ, ±ÈÈç248MµÄÊ±ºò,delay_us×î´óÖ»ÄÜÑÓÊ±541ms×óÓÒÁË */
+    uint32_t repeat = nms / 540;    /*  è¿™é‡Œç”¨540,æ˜¯è€ƒè™‘åˆ°å¯èƒ½æœ‰è¶…é¢‘åº”ç”¨, æ¯”å¦‚248Mçš„æ—¶å€™,delay_usæœ€å¤§åªèƒ½å»¶æ—¶541mså·¦å³äº† */
     uint32_t remain = nms % 540;
 
     while (repeat)
     {
-        us(540 * 1000);        /* ÀûÓÃdelay_us ÊµÏÖ 540ms ÑÓÊ± */
+        us(540 * 1000);        /* åˆ©ç”¨delay_us å®ç° 540ms å»¶æ—¶ */
         repeat--;
     }
 
     if (remain)
     {
-        us(remain * 1000);    /* ÀûÓÃdelay_us, °ÑÎ²ÊıÑÓÊ±(remain ms)¸ø×öÁË */
+        us(remain * 1000);    /* åˆ©ç”¨delay_us, æŠŠå°¾æ•°å»¶æ—¶(remain ms)ç»™åšäº† */
     }
 }
 
 void BSP_Delay::FreeRTOS::Init(void)
 {
-	//µ÷ÓÃFreeRTOS×Ô´øµÄÑÓÊ±¼´¿É¡£
+	//è°ƒç”¨FreeRTOSè‡ªå¸¦çš„å»¶æ—¶å³å¯ã€‚
 	//osDelay
 	//vTaskDelay
 	//vTaskDelayUntil
 }
 
 
-
+extern "C"
 /**
-  * @brief HAL¿âÄÚ²¿º¯ÊıÓÃµ½µÄÑÓÊ±
-           HAL¿âµÄÑÓÊ±Ä¬ÈÏÓÃSystick£¬Èç¹ûÎÒÃÇÃ»ÓĞ¿ªSystickµÄÖĞ¶Ï»áµ¼ÖÂµ÷ÓÃÕâ¸öÑÓÊ±ºóÎŞ·¨ÍË³ö
-  * @param Delay ÒªÑÓÊ±µÄºÁÃëÊı
+  * @brief HALåº“å†…éƒ¨å‡½æ•°ç”¨åˆ°çš„å»¶æ—¶
+           HALåº“çš„å»¶æ—¶é»˜è®¤ç”¨Systickï¼Œå¦‚æœæˆ‘ä»¬æ²¡æœ‰å¼€Systickçš„ä¸­æ–­ä¼šå¯¼è‡´è°ƒç”¨è¿™ä¸ªå»¶æ—¶åæ— æ³•é€€å‡º
+  * @param Delay è¦å»¶æ—¶çš„æ¯«ç§’æ•°
   * @retval None
   */
 void HAL_Delay(uint32_t Delay)
 {
-#if isRTOS==0   //Èç¹ûÊÇÂã»ú¿ª·¢
+#if isRTOS==0   //å¦‚æœæ˜¯è£¸æœºå¼€å‘
 	
-	#ifdef STM32F1  //Èç¹ûÊÇÂã»ú¿ª·¢ÇÒÎªF1
+	#ifdef STM32F1  //å¦‚æœæ˜¯è£¸æœºå¼€å‘ä¸”ä¸ºF1
 			bsp_delay.f1.ms(Delay);
 	#endif
 	
-	#ifdef STM32F4  //Èç¹ûÊÇÂã»ú¿ª·¢ÇÒÎªF4
+	#ifdef STM32F4  //å¦‚æœæ˜¯è£¸æœºå¼€å‘ä¸”ä¸ºF4
 			bsp_delay.f4.ms(Delay);
 	#endif
 	
-#elif isRTOS==1          //Èç¹ûÊÇFreeRTOS¿ª·¢
+#elif isRTOS==1          //å¦‚æœæ˜¯FreeRTOSå¼€å‘
 		 osDelay(Delay);
 #endif
 }
