@@ -1,0 +1,12 @@
+rc_vinci_2024_chassis_r1\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/port.c
+rc_vinci_2024_chassis_r1\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+rc_vinci_2024_chassis_r1\port.o: D:\mdk503\ARM\ARMCC\Bin\..\include\stddef.h
+rc_vinci_2024_chassis_r1\port.o: D:\mdk503\ARM\ARMCC\Bin\..\include\stdint.h
+rc_vinci_2024_chassis_r1\port.o: ../Core/Inc/FreeRTOSConfig.h
+rc_vinci_2024_chassis_r1\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+rc_vinci_2024_chassis_r1\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+rc_vinci_2024_chassis_r1\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+rc_vinci_2024_chassis_r1\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+rc_vinci_2024_chassis_r1\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+rc_vinci_2024_chassis_r1\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+rc_vinci_2024_chassis_r1\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h

@@ -1,0 +1,1 @@
+rc_vinci_2024_chassis_r1\startup_stm32f407xx.o: startup_stm32f407xx.s
