@@ -1,6 +1,9 @@
-#ifndef STRUCT_TYPEDEF_H
-#define STRUCT_TYPEDEF_H
+#ifndef __STRUCT_TYPEDEF_H_
+#define __STRUCT_TYPEDEF_H_
 
+#ifdef __cplusplus
+ extern "C" {
+#endif
 
 typedef signed char int8_t;
 typedef signed short int int16_t;
@@ -16,8 +19,8 @@ typedef unsigned char bool_t;
 typedef float fp32;
 typedef double fp64;
 
-
+#ifdef __cplusplus
+}
 #endif
 
-
-
+#endif

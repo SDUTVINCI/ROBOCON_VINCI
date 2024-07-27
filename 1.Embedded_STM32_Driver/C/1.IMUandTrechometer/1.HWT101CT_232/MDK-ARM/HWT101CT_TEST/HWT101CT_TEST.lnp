@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"hwt101ct_test\startup_stm32f103xb.o"
+"hwt101ct_test\main.o"
+"hwt101ct_test\gpio.o"
+"hwt101ct_test\usart.o"
+"hwt101ct_test\stm32f1xx_it.o"
+"hwt101ct_test\stm32f1xx_hal_msp.o"
+"hwt101ct_test\stm32f1xx_hal_gpio_ex.o"
+"hwt101ct_test\stm32f1xx_hal_tim.o"
+"hwt101ct_test\stm32f1xx_hal_tim_ex.o"
+"hwt101ct_test\stm32f1xx_hal_uart.o"
+"hwt101ct_test\stm32f1xx_hal.o"
+"hwt101ct_test\stm32f1xx_hal_rcc.o"
+"hwt101ct_test\stm32f1xx_hal_rcc_ex.o"
+"hwt101ct_test\stm32f1xx_hal_gpio.o"
+"hwt101ct_test\stm32f1xx_hal_dma.o"
+"hwt101ct_test\stm32f1xx_hal_cortex.o"
+"hwt101ct_test\stm32f1xx_hal_pwr.o"
+"hwt101ct_test\stm32f1xx_hal_flash.o"
+"hwt101ct_test\stm32f1xx_hal_flash_ex.o"
+"hwt101ct_test\stm32f1xx_hal_exti.o"
+"hwt101ct_test\system_stm32f1xx.o"
+"hwt101ct_test\hwt101ct_rs232.o"
+--strict --scatter "HWT101CT_TEST\HWT101CT_TEST.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HWT101CT_TEST.map" -o HWT101CT_TEST\HWT101CT_TEST.axf
