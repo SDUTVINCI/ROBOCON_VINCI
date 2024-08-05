@@ -1,6 +1,5 @@
-山东理工大学Vinci机器人队
+山东理工大学_机电创新学会EMIS_Vinci机器人队
 
-By机电创新学会(EMIS)
 
 请提交文件的各位战队成员仔细观看以下事项:
 
@@ -11,8 +10,10 @@ By机电创新学会(EMIS)
 ③自述文件readme.md应包含该工程作者，主要内容和一些注意事项等。
 
 
-Shandong University of Technology Vinci Robot
-By Electromechanical Innovation Society (EMIS)
+Shandong University of Technology 
+Electromechanical Innovation Society(EMIS)
+VinciRobot
+
 Please carefully review the following items for all team members who have submitted the documents:
 
 ① Please upload the project folder for each student who submits the project, and do not upload the project files to the root directory.
