@@ -1,0 +1,541 @@
+build:
+  generated-by: csolution version 2.8.0
+  solution: H7_CAN_test.csolution.yml
+  project: H7_CAN_test.cproject.yml
+  context: H7_CAN_test+H7_CAN_test
+  compiler: AC6
+  device: STMicroelectronics::STM32H723VGTx
+  device-pack: Keil::STM32H7xx_DFP@4.0.0
+  device-books:
+    - name: https://developer.arm.com/documentation/dui0646/latest
+      title: Cortex-M7 Generic User Guide
+    - name: https://www.st.com/resource/en/reference_manual/rm0468-stm32h723733-stm32h725735-and-stm32h730-value-line-advanced-armbased-32bit-mcus-stmicroelectronics.pdf
+      title: STM32H723/733, STM32H725/735 and STM32H730 Value line Reference Manual
+    - name: https://www.st.com/resource/en/datasheet/stm32h723zg.pdf
+      title: STM32H723VE STM32H723VG STM32H723ZE STM32H723ZG Data Sheet
+  dbgconf:
+    - file: RTE/Device/STM32H723VGTx/STM32H723_725_730_733_735.dbgconf
+      version: 1.0.0
+  processor:
+    endian: little
+    fpu: dp
+    core: Cortex-M7
+  packs:
+    - pack: ARM::CMSIS@5.9.0
+      path: ${CMSIS_PACK_ROOT}/ARM/CMSIS/5.9.0
+    - pack: Keil::STM32H7xx_DFP@4.0.0
+      path: ${CMSIS_PACK_ROOT}/Keil/STM32H7xx_DFP/4.0.0
+  optimize: debug
+  debug: on
+  misc:
+    ASM:
+      - -masm=auto
+    C:
+      - -std=c99
+      - -fno-rtti
+      - -funsigned-char
+      - -fshort-enums
+      - -fshort-wchar
+      - -ffunction-sections
+      - -Wno-packed
+      - -Wno-missing-variable-declarations
+      - -Wno-missing-prototypes
+      - -Wno-missing-noreturn
+      - -Wno-sign-conversion
+      - -Wno-nonportable-include-path
+      - -Wno-reserved-id-macro
+      - -Wno-unused-macros
+      - -Wno-documentation-unknown-command
+      - -Wno-documentation
+      - -Wno-license-management
+      - -Wno-parentheses-equality
+    CPP:
+      - -xc++
+      - -std=c++11
+      - -fno-exceptions
+      - -fno-rtti
+      - -funsigned-char
+      - -fshort-enums
+      - -fshort-wchar
+      - -ffunction-sections
+      - -Wno-packed
+      - -Wno-missing-variable-declarations
+      - -Wno-missing-prototypes
+      - -Wno-missing-noreturn
+      - -Wno-sign-conversion
+      - -Wno-nonportable-include-path
+      - -Wno-reserved-id-macro
+      - -Wno-unused-macros
+      - -Wno-documentation-unknown-command
+      - -Wno-documentation
+      - -Wno-license-management
+      - -Wno-parentheses-equality
+    Link:
+      - --map
+      - --load_addr_map_info
+      - --xref
+      - --callgraph
+      - --symbols
+      - --info sizes
+      - --info totals
+      - --info unused
+      - --info veneers
+      - --strict
+      - --summary_stderr
+      - --info summarysizes
+  define:
+    - USE_PWR_LDO_SUPPLY
+    - USE_HAL_DRIVER
+    - STM32H723xx
+    - STM32H723xx
+    - _RTE_
+  define-asm:
+    - STM32H723xx
+    - _RTE_
+  add-path:
+    - ../Core/Inc
+    - ../Drivers/STM32H7xx_HAL_Driver/Inc
+    - ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy
+    - ../Drivers/CMSIS/Device/ST/STM32H7xx/Include
+    - ../Drivers/CMSIS/Include
+    - ../applications/Inc
+    - ../bsp/boards/Inc
+    - ../USB_DEVICE/App
+    - ../USB_DEVICE/Target
+    - ../Middlewares/Third_Party/FreeRTOS/Source/include
+    - ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS
+    - ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F
+    - ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc
+    - ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc
+    - RTE/_H7_CAN_test
+    - ${CMSIS_PACK_ROOT}/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  add-path-asm:
+    - RTE/_H7_CAN_test
+    - ${CMSIS_PACK_ROOT}/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  output-dirs:
+    intdir: tmp
+    outdir: out/H7_CAN_test/H7_CAN_test
+    rtedir: RTE
+  output:
+    - type: elf
+      file: H7_CAN_test.axf
+  components:
+    - component: ARM::CMSIS:CORE@5.6.0
+      condition: ARMv6_7_8-M Device
+      from-pack: ARM::CMSIS@5.9.0
+      selected-by: ARM::CMSIS:CORE
+      files:
+        - file: ${CMSIS_PACK_ROOT}/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+          category: include
+          version: 5.6.0
+        - file: ${CMSIS_PACK_ROOT}/ARM/CMSIS/5.9.0/CMSIS/Core/Include/tz_context.h
+          category: header
+          version: 5.6.0
+        - file: ${CMSIS_PACK_ROOT}/ARM/CMSIS/5.9.0/CMSIS/Core/Template/ARMv8-M/main_s.c
+          category: sourceC
+          attr: template
+          version: 1.1.1
+          select: Secure mode 'main' module for ARMv8-M
+        - file: ${CMSIS_PACK_ROOT}/ARM/CMSIS/5.9.0/CMSIS/Core/Template/ARMv8-M/tz_context.c
+          category: sourceC
+          attr: template
+          version: 1.1.1
+          select: RTOS Context Management (TrustZone for ARMv8-M)
+        - file: ${CMSIS_PACK_ROOT}/ARM/CMSIS/5.9.0/CMSIS/Documentation/Core/html/index.html
+          category: doc
+          version: 5.6.0
+  linker:
+    script: H7_CAN_test_H7_CAN_test.sct
+  groups:
+    - group: Application/MDK-ARM
+      files:
+        - file: startup_stm32h723xx.s
+          category: sourceAsm
+    - group: Application/User/Core
+      files:
+        - file: ../Core/Src/startup_main.cpp
+          category: sourceCpp
+        - file: ../Core/Src/main.c
+          category: sourceC
+        - file: ../Core/Src/gpio.c
+          category: sourceC
+        - file: ../Core/Src/freertos.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../Core/Src/dma.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../Core/Src/fdcan.c
+          category: sourceC
+        - file: ../Core/Src/i2c.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../Core/Src/memorymap.c
+          category: sourceC
+        - file: ../Core/Src/tim.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../Core/Src/usart.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../Core/Src/stm32h7xx_it.c
+          category: sourceC
+        - file: ../Core/Src/stm32h7xx_hal_msp.c
+          category: sourceC
+    - group: Drivers/STM32H7xx_HAL_Driver
+      files:
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_fdcan.c
+          category: sourceC
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+    - group: Drivers/CMSIS
+      files:
+        - file: ../Core/Src/system_stm32h7xx.c
+          category: sourceC
+    - group: applications
+      files:
+        - file: ../applications/Src/fdcan_receive.cpp
+          category: sourceCpp
+        - file: ../applications/Src/pid.cpp
+          category: sourceCpp
+        - file: ../applications/Src/pid_user.cpp
+          category: sourceCpp
+        - file: ../applications/Src/timer_user.cpp
+          category: sourceCpp
+        - file: ../applications/Src/chassic.cpp
+          category: sourceCpp
+        - file: ../applications/Src/Communition.cpp
+          category: sourceCpp
+        - file: ../applications/Src/DR16.cpp
+          category: sourceCpp
+        - file: ../applications/Src/my_task.cpp
+          category: sourceCpp
+        - file: ../applications/Src/MT6701.cpp
+          category: sourceCpp
+        - file: ../applications/Src/shoot_param.cpp
+          category: sourceCpp
+    - group: bsp/boards
+      files:
+        - file: ../bsp/boards/Src/bsp_fdcan.cpp
+          category: sourceCpp
+        - file: ../bsp/boards/Src/bsp_delay.cpp
+          category: sourceCpp
+        - file: ../bsp/boards/Src/bsp_usart.cpp
+          category: sourceCpp
+    - group: Application/User/USB_DEVICE/App
+      misc:
+        C:
+          - -Wno-packed
+          - -Wno-missing-variable-declarations
+          - -Wno-missing-prototypes
+          - -Wno-missing-noreturn
+          - -Wno-sign-conversion
+          - -Wno-nonportable-include-path
+          - -Wno-reserved-id-macro
+          - -Wno-unused-macros
+          - -Wno-documentation-unknown-command
+          - -Wno-documentation
+          - -Wno-license-management
+          - -Wno-parentheses-equality
+          - -Wno-covered-switch-default
+          - -Wno-unreachable-code-break
+        CPP:
+          - -xc++
+          - -fno-exceptions
+          - -Wno-packed
+          - -Wno-missing-variable-declarations
+          - -Wno-missing-prototypes
+          - -Wno-missing-noreturn
+          - -Wno-sign-conversion
+          - -Wno-nonportable-include-path
+          - -Wno-reserved-id-macro
+          - -Wno-unused-macros
+          - -Wno-documentation-unknown-command
+          - -Wno-documentation
+          - -Wno-license-management
+          - -Wno-parentheses-equality
+          - -Wno-covered-switch-default
+          - -Wno-unreachable-code-break
+      files:
+        - file: ../USB_DEVICE/App/usb_device.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../USB_DEVICE/App/usbd_desc.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../USB_DEVICE/App/usbd_cdc_if.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+    - group: Application/User/USB_DEVICE/Target
+      misc:
+        C:
+          - -Wno-packed
+          - -Wno-missing-variable-declarations
+          - -Wno-missing-prototypes
+          - -Wno-missing-noreturn
+          - -Wno-sign-conversion
+          - -Wno-nonportable-include-path
+          - -Wno-reserved-id-macro
+          - -Wno-unused-macros
+          - -Wno-documentation-unknown-command
+          - -Wno-documentation
+          - -Wno-license-management
+          - -Wno-parentheses-equality
+          - -Wno-covered-switch-default
+          - -Wno-unreachable-code-break
+        CPP:
+          - -xc++
+          - -fno-exceptions
+          - -Wno-packed
+          - -Wno-missing-variable-declarations
+          - -Wno-missing-prototypes
+          - -Wno-missing-noreturn
+          - -Wno-sign-conversion
+          - -Wno-nonportable-include-path
+          - -Wno-reserved-id-macro
+          - -Wno-unused-macros
+          - -Wno-documentation-unknown-command
+          - -Wno-documentation
+          - -Wno-license-management
+          - -Wno-parentheses-equality
+          - -Wno-covered-switch-default
+          - -Wno-unreachable-code-break
+      files:
+        - file: ../USB_DEVICE/Target/usbd_conf.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+    - group: Middlewares/FreeRTOS
+      misc:
+        C:
+          - -Wno-packed
+          - -Wno-missing-variable-declarations
+          - -Wno-missing-prototypes
+          - -Wno-missing-noreturn
+          - -Wno-sign-conversion
+          - -Wno-nonportable-include-path
+          - -Wno-reserved-id-macro
+          - -Wno-unused-macros
+          - -Wno-documentation-unknown-command
+          - -Wno-documentation
+          - -Wno-license-management
+          - -Wno-parentheses-equality
+          - -Wno-covered-switch-default
+          - -Wno-unreachable-code-break
+        CPP:
+          - -xc++
+          - -fno-exceptions
+          - -Wno-packed
+          - -Wno-missing-variable-declarations
+          - -Wno-missing-prototypes
+          - -Wno-missing-noreturn
+          - -Wno-sign-conversion
+          - -Wno-nonportable-include-path
+          - -Wno-reserved-id-macro
+          - -Wno-unused-macros
+          - -Wno-documentation-unknown-command
+          - -Wno-documentation
+          - -Wno-license-management
+          - -Wno-parentheses-equality
+          - -Wno-covered-switch-default
+          - -Wno-unreachable-code-break
+      files:
+        - file: ../Middlewares/Third_Party/FreeRTOS/Source/croutine.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../Middlewares/Third_Party/FreeRTOS/Source/list.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../Middlewares/Third_Party/FreeRTOS/Source/queue.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../Middlewares/Third_Party/FreeRTOS/Source/timers.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/port.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+    - group: Middlewares/USB_Device_Library
+      misc:
+        C:
+          - -Wno-packed
+          - -Wno-missing-variable-declarations
+          - -Wno-missing-prototypes
+          - -Wno-missing-noreturn
+          - -Wno-sign-conversion
+          - -Wno-nonportable-include-path
+          - -Wno-reserved-id-macro
+          - -Wno-unused-macros
+          - -Wno-documentation-unknown-command
+          - -Wno-documentation
+          - -Wno-license-management
+          - -Wno-parentheses-equality
+          - -Wno-covered-switch-default
+          - -Wno-unreachable-code-break
+        CPP:
+          - -xc++
+          - -fno-exceptions
+          - -Wno-packed
+          - -Wno-missing-variable-declarations
+          - -Wno-missing-prototypes
+          - -Wno-missing-noreturn
+          - -Wno-sign-conversion
+          - -Wno-nonportable-include-path
+          - -Wno-reserved-id-macro
+          - -Wno-unused-macros
+          - -Wno-documentation-unknown-command
+          - -Wno-documentation
+          - -Wno-license-management
+          - -Wno-parentheses-equality
+          - -Wno-covered-switch-default
+          - -Wno-unreachable-code-break
+      files:
+        - file: ../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+  constructed-files:
+    - file: RTE/_H7_CAN_test/RTE_Components.h
+      category: header
+  licenses:
+    - license: <unknown>
+      packs:
+        - pack: ARM::CMSIS@5.9.0
+      components:
+        - component: ARM::CMSIS:CORE@5.6.0
+    - license: Apache-2.0
+      packs:
+        - pack: Keil::STM32H7xx_DFP@4.0.0

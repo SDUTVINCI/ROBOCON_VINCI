@@ -1,0 +1,37 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/25RC_Project/R2/R2_classic_H7_Auto/MDK-ARM/tmp/CMakeFiles/H7_CAN_test+H7_CAN_test-database"
+		},
+		{
+			"file" : "D:/25RC_Project/R2/R2_classic_H7_Auto/MDK-ARM/tmp/CMakeFiles/H7_CAN_test+H7_CAN_test-database.rule"
+		},
+		{
+			"file" : "D:/25RC_Project/R2/R2_classic_H7_Auto/MDK-ARM/tmp/H7_CAN_test+H7_CAN_test/src/H7_CAN_test+H7_CAN_test-stamp/H7_CAN_test+H7_CAN_test-database.rule"
+		},
+		{
+			"file" : "D:/25RC_Project/R2/R2_classic_H7_Auto/MDK-ARM/tmp/H7_CAN_test+H7_CAN_test/src/H7_CAN_test+H7_CAN_test-stamp/H7_CAN_test+H7_CAN_test-configure.rule"
+		},
+		{
+			"file" : "D:/25RC_Project/R2/R2_classic_H7_Auto/MDK-ARM/tmp/H7_CAN_test+H7_CAN_test/src/H7_CAN_test+H7_CAN_test-stamp/H7_CAN_test+H7_CAN_test-patch.rule"
+		},
+		{
+			"file" : "D:/25RC_Project/R2/R2_classic_H7_Auto/MDK-ARM/tmp/H7_CAN_test+H7_CAN_test/src/H7_CAN_test+H7_CAN_test-stamp/H7_CAN_test+H7_CAN_test-update.rule"
+		},
+		{
+			"file" : "D:/25RC_Project/R2/R2_classic_H7_Auto/MDK-ARM/tmp/H7_CAN_test+H7_CAN_test/src/H7_CAN_test+H7_CAN_test-stamp/H7_CAN_test+H7_CAN_test-download.rule"
+		},
+		{
+			"file" : "D:/25RC_Project/R2/R2_classic_H7_Auto/MDK-ARM/tmp/H7_CAN_test+H7_CAN_test/src/H7_CAN_test+H7_CAN_test-stamp/H7_CAN_test+H7_CAN_test-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"H7_CAN_test+H7_CAN_test"
+		],
+		"name" : "H7_CAN_test+H7_CAN_test-database"
+	}
+}

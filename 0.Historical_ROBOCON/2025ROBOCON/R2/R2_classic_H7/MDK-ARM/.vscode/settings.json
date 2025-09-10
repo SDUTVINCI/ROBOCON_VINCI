@@ -1,0 +1,14 @@
+{
+    "clangd.arguments": [
+        "--compile-commands-dir=d:\\25RC_Project\\R2\\R2_classic_H7\\MDK-ARM\\out\\H7_CAN_test\\H7_CAN_test"
+    ],
+    "cmsis-csolution.actions": [
+        {
+            "path": "H7_CAN_test.csolution.yml",
+            "target": "H7_CAN_test",
+            "config": {
+                "run": "Flash Device"
+            }
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+cbuild-set:
+  generated-by: vscode-cmsis-csolution version 1.52.0
+  contexts:
+    - context: F4_short_ball_v1+F4_short_ball_v1

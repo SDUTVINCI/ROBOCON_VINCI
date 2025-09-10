@@ -1,0 +1,5 @@
+{
+    "clangd.arguments": [
+        "--compile-commands-dir=d:\\25RC_Project\\R2\\R2_short_ball_v1\\MDK-ARM\\out\\F4_short_ball_v1\\F4_short_ball_v1"
+    ]
+}

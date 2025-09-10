@@ -1,0 +1,18 @@
+build-idx:
+  generated-by: csolution version 2.8.0
+  csolution: H7_CAN_test.csolution.yml
+  tmpdir: tmp
+  cprojects:
+    - cproject: H7_CAN_test.cproject.yml
+  cbuilds:
+    - cbuild: H7_CAN_test+H7_CAN_test.cbuild.yml
+      project: H7_CAN_test
+      configuration: +H7_CAN_test
+      messages:
+        info:
+          - H7_CAN_test.cbuild-pack.yml - file is already up-to-date
+          - H7_CAN_test+H7_CAN_test.cbuild-run.yml - file generated successfully
+          - H7_CAN_test+H7_CAN_test.cbuild.yml - file is already up-to-date
+      packs-unused:
+        - pack: ARM::CMSIS-DSP@1.15.0
+        - pack: ARM::CMSIS-NN@4.1.0

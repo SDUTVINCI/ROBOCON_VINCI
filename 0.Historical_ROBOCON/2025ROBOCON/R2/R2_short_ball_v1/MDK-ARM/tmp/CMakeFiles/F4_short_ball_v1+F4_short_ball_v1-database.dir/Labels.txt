@@ -1,0 +1,11 @@
+# Target labels
+ F4_short_ball_v1+F4_short_ball_v1
+# Source files and their labels
+D:/25RC_Project/R2/R2_short_ball_v1/MDK-ARM/tmp/CMakeFiles/F4_short_ball_v1+F4_short_ball_v1-database
+D:/25RC_Project/R2/R2_short_ball_v1/MDK-ARM/tmp/CMakeFiles/F4_short_ball_v1+F4_short_ball_v1-database.rule
+D:/25RC_Project/R2/R2_short_ball_v1/MDK-ARM/tmp/F4_short_ball_v1+F4_short_ball_v1/src/F4_short_ball_v1+F4_short_ball_v1-stamp/F4_short_ball_v1+F4_short_ball_v1-database.rule
+D:/25RC_Project/R2/R2_short_ball_v1/MDK-ARM/tmp/F4_short_ball_v1+F4_short_ball_v1/src/F4_short_ball_v1+F4_short_ball_v1-stamp/F4_short_ball_v1+F4_short_ball_v1-configure.rule
+D:/25RC_Project/R2/R2_short_ball_v1/MDK-ARM/tmp/F4_short_ball_v1+F4_short_ball_v1/src/F4_short_ball_v1+F4_short_ball_v1-stamp/F4_short_ball_v1+F4_short_ball_v1-patch.rule
+D:/25RC_Project/R2/R2_short_ball_v1/MDK-ARM/tmp/F4_short_ball_v1+F4_short_ball_v1/src/F4_short_ball_v1+F4_short_ball_v1-stamp/F4_short_ball_v1+F4_short_ball_v1-update.rule
+D:/25RC_Project/R2/R2_short_ball_v1/MDK-ARM/tmp/F4_short_ball_v1+F4_short_ball_v1/src/F4_short_ball_v1+F4_short_ball_v1-stamp/F4_short_ball_v1+F4_short_ball_v1-download.rule
+D:/25RC_Project/R2/R2_short_ball_v1/MDK-ARM/tmp/F4_short_ball_v1+F4_short_ball_v1/src/F4_short_ball_v1+F4_short_ball_v1-stamp/F4_short_ball_v1+F4_short_ball_v1-mkdir.rule

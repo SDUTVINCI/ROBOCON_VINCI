@@ -1,0 +1,37 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/25RC_Project/R2/R2_short_ball_v1/MDK-ARM/tmp/CMakeFiles/F4_short_ball_v1+F4_short_ball_v1-build"
+		},
+		{
+			"file" : "D:/25RC_Project/R2/R2_short_ball_v1/MDK-ARM/tmp/CMakeFiles/F4_short_ball_v1+F4_short_ball_v1-build.rule"
+		},
+		{
+			"file" : "D:/25RC_Project/R2/R2_short_ball_v1/MDK-ARM/tmp/F4_short_ball_v1+F4_short_ball_v1/src/F4_short_ball_v1+F4_short_ball_v1-stamp/F4_short_ball_v1+F4_short_ball_v1-build.rule"
+		},
+		{
+			"file" : "D:/25RC_Project/R2/R2_short_ball_v1/MDK-ARM/tmp/F4_short_ball_v1+F4_short_ball_v1/src/F4_short_ball_v1+F4_short_ball_v1-stamp/F4_short_ball_v1+F4_short_ball_v1-configure.rule"
+		},
+		{
+			"file" : "D:/25RC_Project/R2/R2_short_ball_v1/MDK-ARM/tmp/F4_short_ball_v1+F4_short_ball_v1/src/F4_short_ball_v1+F4_short_ball_v1-stamp/F4_short_ball_v1+F4_short_ball_v1-patch.rule"
+		},
+		{
+			"file" : "D:/25RC_Project/R2/R2_short_ball_v1/MDK-ARM/tmp/F4_short_ball_v1+F4_short_ball_v1/src/F4_short_ball_v1+F4_short_ball_v1-stamp/F4_short_ball_v1+F4_short_ball_v1-update.rule"
+		},
+		{
+			"file" : "D:/25RC_Project/R2/R2_short_ball_v1/MDK-ARM/tmp/F4_short_ball_v1+F4_short_ball_v1/src/F4_short_ball_v1+F4_short_ball_v1-stamp/F4_short_ball_v1+F4_short_ball_v1-download.rule"
+		},
+		{
+			"file" : "D:/25RC_Project/R2/R2_short_ball_v1/MDK-ARM/tmp/F4_short_ball_v1+F4_short_ball_v1/src/F4_short_ball_v1+F4_short_ball_v1-stamp/F4_short_ball_v1+F4_short_ball_v1-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"F4_short_ball_v1+F4_short_ball_v1"
+		],
+		"name" : "F4_short_ball_v1+F4_short_ball_v1-build"
+	}
+}

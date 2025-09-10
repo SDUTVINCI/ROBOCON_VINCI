@@ -1,0 +1,328 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      The target system is: Generic -  - 
+      The host system is: Windows - 10.0.26100 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      Product: Keil MDK Community (non-commercial free of charge)
+      Component: Arm Compiler for Embedded 6.23
+      Tool: armclang [5f103000]
+      
+      Target: unspecified-arm-none-none
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+      Product: Keil MDK Community (non-commercial free of charge)
+      Component: Arm Compiler for Embedded 6.23
+      Tool: armclang [5f103000]
+      
+      Target: unspecified-arm-none-none
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is Clang using "--version" did not match "(clang version)":
+      Product: Keil MDK Community (non-commercial free of charge)
+      Component: Arm Compiler for Embedded 6.23
+      Tool: armclang [5f103000]
+      
+      Target: unspecified-arm-none-none
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1237 (message)"
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is ARMClang using "--version" matched "armclang":
+      Product: Keil MDK Community (non-commercial free of charge)
+      Component: Arm Compiler for Embedded 6.23
+      Tool: armclang [5f103000]
+      
+      Target: unspecified-arm-none-none
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: c:/Users/18160/.vcpkg/artifacts/2139c4c6/compilers.arm.armclang/6.23.0/bin/armclang.exe 
+      Build flags: --target=arm-arm-none-eabi;-mcpu=Cortex-M7;-mfpu=fpv5-d16;-mfloat-abi=hard
+      Id flags: -c;--target=arm-arm-none-eabi 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is ARMClang, found in:
+        D:/25RC_Project/R2/R2_classic_H7_Auto/MDK-ARM/tmp/1/CMakeFiles/3.31.5/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: c:/Users/18160/.vcpkg/artifacts/2139c4c6/compilers.arm.armclang/6.23.0/bin/armclang.exe 
+      Build flags: --target=arm-arm-none-eabi;-mcpu=Cortex-M7;-mfpu=fpv5-d16;-mfloat-abi=hard
+      Id flags: -c;--target=arm-arm-none-eabi 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is ARMClang, found in:
+        D:/25RC_Project/R2/R2_classic_H7_Auto/MDK-ARM/tmp/1/CMakeFiles/3.31.5/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "D:/25RC_Project/R2/R2_classic_H7_Auto/MDK-ARM/tmp/1/CMakeFiles/CMakeScratch/TryCompile-akm3bj"
+      binary: "D:/25RC_Project/R2/R2_classic_H7_Auto/MDK-ARM/tmp/1/CMakeFiles/CMakeScratch/TryCompile-akm3bj"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_TARGET: "arm-arm-none-eabi"
+      CMAKE_CXX_FLAGS: "--target=arm-arm-none-eabi -mcpu=Cortex-M7 -mfpu=fpv5-d16 -mfloat-abi=hard"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_C_COMPILER_TARGET: "arm-arm-none-eabi"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.8.0/etc/CMakeASM"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/25RC_Project/R2/R2_classic_H7_Auto/MDK-ARM/tmp/1/CMakeFiles/CMakeScratch/TryCompile-akm3bj'
+        
+        Run Build Command(s): C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.ninja.build.ninja/1.12.0/ninja.exe -v cmTC_6b655
+        [1/2] c:\\Users\\18160\\.vcpkg\\artifacts\\2139c4c6\\compilers.arm.armclang\\6.23.0\\bin\\armclang.exe --target=arm-arm-none-eabi   --target=arm-arm-none-eabi -mcpu=Cortex-M7 -mfpu=fpv5-d16 -mfloat-abi=hard    -v -MD -MT CMakeFiles/cmTC_6b655.dir/CMakeCXXCompilerABI.o -MF CMakeFiles\\cmTC_6b655.dir\\CMakeCXXCompilerABI.o.d -o CMakeFiles/cmTC_6b655.dir/CMakeCXXCompilerABI.o -c C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Product: Keil MDK Community (non-commercial free of charge)
+        Component: Arm Compiler for Embedded 6.23
+        Tool: armclang [5f103000]
+        
+        Target: arm-arm-none-eabi
+         (in-process)
+         "C:\\\\Users\\\\18160\\\\.vcpkg\\\\artifacts\\\\2139c4c6\\\\compilers.arm.armclang\\\\6.23.0\\\\bin\\\\armclang.exe" -cc1 -triple thumbv7em-arm-none-eabihf -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -Werror=return-type -mrelocation-model static -mframe-pointer=none -menable-no-infs -menable-no-nans -fmath-errno -fno-signed-zeros -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=on -fno-rounding-math -ffinite-math-only -mconstructor-aliases -target-cpu cortex-m7 -target-feature +vfp2 -target-feature +vfp2sp -target-feature -vfp3 -target-feature +vfp3d16 -target-feature +vfp3d16sp -target-feature -vfp3sp -target-feature +fp16 -target-feature -vfp4 -target-feature +vfp4d16 -target-feature +vfp4d16sp -target-feature -vfp4sp -target-feature -fp-armv8 -target-feature +fp-armv8d16 -target-feature +fp-armv8d16sp -target-feature -fp-armv8sp -target-feature -fullfp16 -target-feature +fp64 -target-feature -d32 -target-feature -neon -target-feature -sha2 -target-feature -aes -target-feature -fp16fml -target-abi aapcs -mfloat-abi hard -debugger-tuning=gdb -fforce-dwarf-frame "-fdebug-compilation-dir=D:\\\\25RC_Project\\\\R2\\\\R2_classic_H7_Auto\\\\MDK-ARM\\\\tmp\\\\1\\\\CMakeFiles\\\\CMakeScratch\\\\TryCompile-akm3bj" -v -ffunction-sections -fdata-sections "-fcoverage-compilation-dir=D:\\\\25RC_Project\\\\R2\\\\R2_classic_H7_Auto\\\\MDK-ARM\\\\tmp\\\\1\\\\CMakeFiles\\\\CMakeScratch\\\\TryCompile-akm3bj" -resource-dir "C:\\\\Users\\\\18160\\\\.vcpkg\\\\artifacts\\\\2139c4c6\\\\compilers.arm.armclang\\\\6.23.0\\\\lib\\\\clang\\\\20" -dependency-file "CMakeFiles\\\\cmTC_6b655.dir\\\\CMakeCXXCompilerABI.o.d" -MT CMakeFiles/cmTC_6b655.dir/CMakeCXXCompilerABI.o -sys-header-deps -D__ARMCOMPILER_LIBCXX=1 -internal-isystem "C:\\\\Users\\\\18160\\\\.vcpkg\\\\artifacts\\\\2139c4c6\\\\compilers.arm.armclang\\\\6.23.0\\\\bin\\\\..\\\\include\\\\libcxx" -internal-isystem "C:\\\\Users\\\\18160\\\\.vcpkg\\\\artifacts\\\\2139c4c6\\\\compilers.arm.armclang\\\\6.23.0\\\\bin\\\\..\\\\include" -nobuiltininc -fdeprecated-macro -ferror-limit 19 -fvisibility=hidden -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fsuppress-licensing -aggressive-jump-threading -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_6b655.dir/CMakeCXXCompilerABI.o -x c++ C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp\x0d
+        Arm Compiler for Embedded 6.23 -cc1 default target aarch64-arm-none-eabi\x0d
+        #include "..." search starts here:\x0d
+        #include <...> search starts here:\x0d
+         C:\\Users\\18160\\.vcpkg\\artifacts\\2139c4c6\\compilers.arm.armclang\\6.23.0\\bin\\..\\include\\libcxx\x0d
+         C:\\Users\\18160\\.vcpkg\\artifacts\\2139c4c6\\compilers.arm.armclang\\6.23.0\\bin\\..\\include\x0d
+        End of search list.\x0d
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && c:\\Users\\18160\\.vcpkg\\artifacts\\2139c4c6\\compilers.arm.armclang\\6.23.0\\bin\\armar.exe --create -cr libcmTC_6b655.a  CMakeFiles/cmTC_6b655.dir/CMakeCXXCompilerABI.o && cd ."
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/Users/18160/.vcpkg/artifacts/2139c4c6/compilers.arm.armclang/6.23.0/bin/../include/libcxx]
+          add: [C:/Users/18160/.vcpkg/artifacts/2139c4c6/compilers.arm.armclang/6.23.0/bin/../include]
+        end of search list found
+        collapse include dir [C:/Users/18160/.vcpkg/artifacts/2139c4c6/compilers.arm.armclang/6.23.0/bin/../include/libcxx] ==> [C:/Users/18160/.vcpkg/artifacts/2139c4c6/compilers.arm.armclang/6.23.0/include/libcxx]
+        collapse include dir [C:/Users/18160/.vcpkg/artifacts/2139c4c6/compilers.arm.armclang/6.23.0/bin/../include] ==> [C:/Users/18160/.vcpkg/artifacts/2139c4c6/compilers.arm.armclang/6.23.0/include]
+        implicit include dirs: [C:/Users/18160/.vcpkg/artifacts/2139c4c6/compilers.arm.armclang/6.23.0/include/libcxx;C:/Users/18160/.vcpkg/artifacts/2139c4c6/compilers.arm.armclang/6.23.0/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(armlink\\.exe|;ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(armlink\\.exe|;ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: 'D:/25RC_Project/R2/R2_classic_H7_Auto/MDK-ARM/tmp/1/CMakeFiles/CMakeScratch/TryCompile-akm3bj']
+        ignore line: []
+        ignore line: [Run Build Command(s): C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.ninja.build.ninja/1.12.0/ninja.exe -v cmTC_6b655]
+        ignore line: [[1/2] c:\\Users\\18160\\.vcpkg\\artifacts\\2139c4c6\\compilers.arm.armclang\\6.23.0\\bin\\armclang.exe --target=arm-arm-none-eabi   --target=arm-arm-none-eabi -mcpu=Cortex-M7 -mfpu=fpv5-d16 -mfloat-abi=hard    -v -MD -MT CMakeFiles/cmTC_6b655.dir/CMakeCXXCompilerABI.o -MF CMakeFiles\\cmTC_6b655.dir\\CMakeCXXCompilerABI.o.d -o CMakeFiles/cmTC_6b655.dir/CMakeCXXCompilerABI.o -c C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Product: Keil MDK Community (non-commercial free of charge)]
+        ignore line: [Component: Arm Compiler for Embedded 6.23]
+        ignore line: [Tool: armclang [5f103000]]
+        ignore line: []
+        ignore line: [Target: arm-arm-none-eabi]
+        ignore line: [ (in-process)]
+        ignore line: [ "C:\\\\Users\\\\18160\\\\.vcpkg\\\\artifacts\\\\2139c4c6\\\\compilers.arm.armclang\\\\6.23.0\\\\bin\\\\armclang.exe" -cc1 -triple thumbv7em-arm-none-eabihf -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -Werror=return-type -mrelocation-model static -mframe-pointer=none -menable-no-infs -menable-no-nans -fmath-errno -fno-signed-zeros -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=on -fno-rounding-math -ffinite-math-only -mconstructor-aliases -target-cpu cortex-m7 -target-feature +vfp2 -target-feature +vfp2sp -target-feature -vfp3 -target-feature +vfp3d16 -target-feature +vfp3d16sp -target-feature -vfp3sp -target-feature +fp16 -target-feature -vfp4 -target-feature +vfp4d16 -target-feature +vfp4d16sp -target-feature -vfp4sp -target-feature -fp-armv8 -target-feature +fp-armv8d16 -target-feature +fp-armv8d16sp -target-feature -fp-armv8sp -target-feature -fullfp16 -target-feature +fp64 -target-feature -d32 -target-feature -neon -target-feature -sha2 -target-feature -aes -target-feature -fp16fml -target-abi aapcs -mfloat-abi hard -debugger-tuning=gdb -fforce-dwarf-frame "-fdebug-compilation-dir=D:\\\\25RC_Project\\\\R2\\\\R2_classic_H7_Auto\\\\MDK-ARM\\\\tmp\\\\1\\\\CMakeFiles\\\\CMakeScratch\\\\TryCompile-akm3bj" -v -ffunction-sections -fdata-sections "-fcoverage-compilation-dir=D:\\\\25RC_Project\\\\R2\\\\R2_classic_H7_Auto\\\\MDK-ARM\\\\tmp\\\\1\\\\CMakeFiles\\\\CMakeScratch\\\\TryCompile-akm3bj" -resource-dir "C:\\\\Users\\\\18160\\\\.vcpkg\\\\artifacts\\\\2139c4c6\\\\compilers.arm.armclang\\\\6.23.0\\\\lib\\\\clang\\\\20" -dependency-file "CMakeFiles\\\\cmTC_6b655.dir\\\\CMakeCXXCompilerABI.o.d" -MT CMakeFiles/cmTC_6b655.dir/CMakeCXXCompilerABI.o -sys-header-deps -D__ARMCOMPILER_LIBCXX=1 -internal-isystem "C:\\\\Users\\\\18160\\\\.vcpkg\\\\artifacts\\\\2139c4c6\\\\compilers.arm.armclang\\\\6.23.0\\\\bin\\\\..\\\\include\\\\libcxx" -internal-isystem "C:\\\\Users\\\\18160\\\\.vcpkg\\\\artifacts\\\\2139c4c6\\\\compilers.arm.armclang\\\\6.23.0\\\\bin\\\\..\\\\include" -nobuiltininc -fdeprecated-macro -ferror-limit 19 -fvisibility=hidden -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fsuppress-licensing -aggressive-jump-threading -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_6b655.dir/CMakeCXXCompilerABI.o -x c++ C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp\x0d]
+        ignore line: [Arm Compiler for Embedded 6.23 -cc1 default target aarch64-arm-none-eabi\x0d]
+        ignore line: [#include "..." search starts here:\x0d]
+        ignore line: [#include <...> search starts here:\x0d]
+        ignore line: [ C:\\Users\\18160\\.vcpkg\\artifacts\\2139c4c6\\compilers.arm.armclang\\6.23.0\\bin\\..\\include\\libcxx\x0d]
+        ignore line: [ C:\\Users\\18160\\.vcpkg\\artifacts\\2139c4c6\\compilers.arm.armclang\\6.23.0\\bin\\..\\include\x0d]
+        ignore line: [End of search list.\x0d]
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && c:\\Users\\18160\\.vcpkg\\artifacts\\2139c4c6\\compilers.arm.armclang\\6.23.0\\bin\\armar.exe --create -cr libcmTC_6b655.a  CMakeFiles/cmTC_6b655.dir/CMakeCXXCompilerABI.o && cd ."]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/Internal/FeatureTesting.cmake:34 (try_compile)"
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/Compiler/Clang.cmake:315 (_record_compiler_features)"
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerSupport.cmake:70 (cmake_record_cxx_compile_features)"
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:83 (CMAKE_DETERMINE_COMPILER_SUPPORT)"
+      - "CMakeLists.txt:22 (project)"
+    checks:
+      - "Detecting CXX compile features"
+    directories:
+      source: "D:/25RC_Project/R2/R2_classic_H7_Auto/MDK-ARM/tmp/1/CMakeFiles/CMakeScratch/TryCompile-pslv7o"
+      binary: "D:/25RC_Project/R2/R2_classic_H7_Auto/MDK-ARM/tmp/1/CMakeFiles/CMakeScratch/TryCompile-pslv7o"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_TARGET: "arm-arm-none-eabi"
+      CMAKE_CXX_FLAGS: "--target=arm-arm-none-eabi -mcpu=Cortex-M7 -mfpu=fpv5-d16 -mfloat-abi=hard"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_C_COMPILER_TARGET: "arm-arm-none-eabi"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.8.0/etc/CMakeASM"
+    buildResult:
+      variable: "CMAKE_CXX_FEATURE_TEST"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/25RC_Project/R2/R2_classic_H7_Auto/MDK-ARM/tmp/1/CMakeFiles/CMakeScratch/TryCompile-pslv7o'
+        
+        Run Build Command(s): C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.ninja.build.ninja/1.12.0/ninja.exe -v cmTC_5c083
+        [1/2] c:\\Users\\18160\\.vcpkg\\artifacts\\2139c4c6\\compilers.arm.armclang\\6.23.0\\bin\\armclang.exe --target=arm-arm-none-eabi   --target=arm-arm-none-eabi -mcpu=Cortex-M7 -mfpu=fpv5-d16 -mfloat-abi=hard -MD -MT CMakeFiles/cmTC_5c083.dir/feature_tests.o -MF CMakeFiles\\cmTC_5c083.dir\\feature_tests.o.d -o CMakeFiles/cmTC_5c083.dir/feature_tests.o -c D:/25RC_Project/R2/R2_classic_H7_Auto/MDK-ARM/tmp/1/CMakeFiles/CMakeScratch/TryCompile-pslv7o/feature_tests.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && c:\\Users\\18160\\.vcpkg\\artifacts\\2139c4c6\\compilers.arm.armclang\\6.23.0\\bin\\armar.exe --create -cr libcmTC_5c083.a  CMakeFiles/cmTC_5c083.dir/feature_tests.o && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "D:/25RC_Project/R2/R2_classic_H7_Auto/MDK-ARM/tmp/1/CMakeFiles/CMakeScratch/TryCompile-uls9rw"
+      binary: "D:/25RC_Project/R2/R2_classic_H7_Auto/MDK-ARM/tmp/1/CMakeFiles/CMakeScratch/TryCompile-uls9rw"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_TARGET: "arm-arm-none-eabi"
+      CMAKE_C_COMPILER_TARGET: "arm-arm-none-eabi"
+      CMAKE_C_FLAGS: "--target=arm-arm-none-eabi -mcpu=Cortex-M7 -mfpu=fpv5-d16 -mfloat-abi=hard"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.8.0/etc/CMakeASM"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/25RC_Project/R2/R2_classic_H7_Auto/MDK-ARM/tmp/1/CMakeFiles/CMakeScratch/TryCompile-uls9rw'
+        
+        Run Build Command(s): C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.ninja.build.ninja/1.12.0/ninja.exe -v cmTC_e23f7
+        [1/2] c:\\Users\\18160\\.vcpkg\\artifacts\\2139c4c6\\compilers.arm.armclang\\6.23.0\\bin\\armclang.exe --target=arm-arm-none-eabi   --target=arm-arm-none-eabi -mcpu=Cortex-M7 -mfpu=fpv5-d16 -mfloat-abi=hard    -v -MD -MT CMakeFiles/cmTC_e23f7.dir/CMakeCCompilerABI.o -MF CMakeFiles\\cmTC_e23f7.dir\\CMakeCCompilerABI.o.d -o CMakeFiles/cmTC_e23f7.dir/CMakeCCompilerABI.o -c C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Product: Keil MDK Community (non-commercial free of charge)
+        Component: Arm Compiler for Embedded 6.23
+        Tool: armclang [5f103000]
+        
+        Target: arm-arm-none-eabi
+         (in-process)
+         "C:\\\\Users\\\\18160\\\\.vcpkg\\\\artifacts\\\\2139c4c6\\\\compilers.arm.armclang\\\\6.23.0\\\\bin\\\\armclang.exe" -cc1 -triple thumbv7em-arm-none-eabihf -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=none -menable-no-infs -menable-no-nans -fmath-errno -fno-signed-zeros -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=on -fno-rounding-math -ffinite-math-only -mconstructor-aliases -target-cpu cortex-m7 -target-feature +vfp2 -target-feature +vfp2sp -target-feature -vfp3 -target-feature +vfp3d16 -target-feature +vfp3d16sp -target-feature -vfp3sp -target-feature +fp16 -target-feature -vfp4 -target-feature +vfp4d16 -target-feature +vfp4d16sp -target-feature -vfp4sp -target-feature -fp-armv8 -target-feature +fp-armv8d16 -target-feature +fp-armv8d16sp -target-feature -fp-armv8sp -target-feature -fullfp16 -target-feature +fp64 -target-feature -d32 -target-feature -neon -target-feature -sha2 -target-feature -aes -target-feature -fp16fml -target-abi aapcs -mfloat-abi hard -debugger-tuning=gdb -fforce-dwarf-frame "-fdebug-compilation-dir=D:\\\\25RC_Project\\\\R2\\\\R2_classic_H7_Auto\\\\MDK-ARM\\\\tmp\\\\1\\\\CMakeFiles\\\\CMakeScratch\\\\TryCompile-uls9rw" -v -ffunction-sections -fdata-sections "-fcoverage-compilation-dir=D:\\\\25RC_Project\\\\R2\\\\R2_classic_H7_Auto\\\\MDK-ARM\\\\tmp\\\\1\\\\CMakeFiles\\\\CMakeScratch\\\\TryCompile-uls9rw" -resource-dir "C:\\\\Users\\\\18160\\\\.vcpkg\\\\artifacts\\\\2139c4c6\\\\compilers.arm.armclang\\\\6.23.0\\\\lib\\\\clang\\\\20" -dependency-file "CMakeFiles\\\\cmTC_e23f7.dir\\\\CMakeCCompilerABI.o.d" -MT CMakeFiles/cmTC_e23f7.dir/CMakeCCompilerABI.o -sys-header-deps -internal-isystem "C:\\\\Users\\\\18160\\\\.vcpkg\\\\artifacts\\\\2139c4c6\\\\compilers.arm.armclang\\\\6.23.0\\\\bin\\\\..\\\\include" -nobuiltininc -ferror-limit 19 -fvisibility=hidden -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fsuppress-licensing -aggressive-jump-threading -o CMakeFiles/cmTC_e23f7.dir/CMakeCCompilerABI.o -x c C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Arm Compiler for Embedded 6.23 -cc1 default target aarch64-arm-none-eabi
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:\\Users\\18160\\.vcpkg\\artifacts\\2139c4c6\\compilers.arm.armclang\\6.23.0\\bin\\..\\include
+        End of search list.\x0d
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && c:\\Users\\18160\\.vcpkg\\artifacts\\2139c4c6\\compilers.arm.armclang\\6.23.0\\bin\\armar.exe --create -cr libcmTC_e23f7.a  CMakeFiles/cmTC_e23f7.dir/CMakeCCompilerABI.o && cd ."
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/Users/18160/.vcpkg/artifacts/2139c4c6/compilers.arm.armclang/6.23.0/bin/../include]
+        end of search list found
+        collapse include dir [C:/Users/18160/.vcpkg/artifacts/2139c4c6/compilers.arm.armclang/6.23.0/bin/../include] ==> [C:/Users/18160/.vcpkg/artifacts/2139c4c6/compilers.arm.armclang/6.23.0/include]
+        implicit include dirs: [C:/Users/18160/.vcpkg/artifacts/2139c4c6/compilers.arm.armclang/6.23.0/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(armlink\\.exe|;ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(armlink\\.exe|;ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: 'D:/25RC_Project/R2/R2_classic_H7_Auto/MDK-ARM/tmp/1/CMakeFiles/CMakeScratch/TryCompile-uls9rw']
+        ignore line: []
+        ignore line: [Run Build Command(s): C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.ninja.build.ninja/1.12.0/ninja.exe -v cmTC_e23f7]
+        ignore line: [[1/2] c:\\Users\\18160\\.vcpkg\\artifacts\\2139c4c6\\compilers.arm.armclang\\6.23.0\\bin\\armclang.exe --target=arm-arm-none-eabi   --target=arm-arm-none-eabi -mcpu=Cortex-M7 -mfpu=fpv5-d16 -mfloat-abi=hard    -v -MD -MT CMakeFiles/cmTC_e23f7.dir/CMakeCCompilerABI.o -MF CMakeFiles\\cmTC_e23f7.dir\\CMakeCCompilerABI.o.d -o CMakeFiles/cmTC_e23f7.dir/CMakeCCompilerABI.o -c C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Product: Keil MDK Community (non-commercial free of charge)]
+        ignore line: [Component: Arm Compiler for Embedded 6.23]
+        ignore line: [Tool: armclang [5f103000]]
+        ignore line: []
+        ignore line: [Target: arm-arm-none-eabi]
+        ignore line: [ (in-process)]
+        ignore line: [ "C:\\\\Users\\\\18160\\\\.vcpkg\\\\artifacts\\\\2139c4c6\\\\compilers.arm.armclang\\\\6.23.0\\\\bin\\\\armclang.exe" -cc1 -triple thumbv7em-arm-none-eabihf -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=none -menable-no-infs -menable-no-nans -fmath-errno -fno-signed-zeros -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=on -fno-rounding-math -ffinite-math-only -mconstructor-aliases -target-cpu cortex-m7 -target-feature +vfp2 -target-feature +vfp2sp -target-feature -vfp3 -target-feature +vfp3d16 -target-feature +vfp3d16sp -target-feature -vfp3sp -target-feature +fp16 -target-feature -vfp4 -target-feature +vfp4d16 -target-feature +vfp4d16sp -target-feature -vfp4sp -target-feature -fp-armv8 -target-feature +fp-armv8d16 -target-feature +fp-armv8d16sp -target-feature -fp-armv8sp -target-feature -fullfp16 -target-feature +fp64 -target-feature -d32 -target-feature -neon -target-feature -sha2 -target-feature -aes -target-feature -fp16fml -target-abi aapcs -mfloat-abi hard -debugger-tuning=gdb -fforce-dwarf-frame "-fdebug-compilation-dir=D:\\\\25RC_Project\\\\R2\\\\R2_classic_H7_Auto\\\\MDK-ARM\\\\tmp\\\\1\\\\CMakeFiles\\\\CMakeScratch\\\\TryCompile-uls9rw" -v -ffunction-sections -fdata-sections "-fcoverage-compilation-dir=D:\\\\25RC_Project\\\\R2\\\\R2_classic_H7_Auto\\\\MDK-ARM\\\\tmp\\\\1\\\\CMakeFiles\\\\CMakeScratch\\\\TryCompile-uls9rw" -resource-dir "C:\\\\Users\\\\18160\\\\.vcpkg\\\\artifacts\\\\2139c4c6\\\\compilers.arm.armclang\\\\6.23.0\\\\lib\\\\clang\\\\20" -dependency-file "CMakeFiles\\\\cmTC_e23f7.dir\\\\CMakeCCompilerABI.o.d" -MT CMakeFiles/cmTC_e23f7.dir/CMakeCCompilerABI.o -sys-header-deps -internal-isystem "C:\\\\Users\\\\18160\\\\.vcpkg\\\\artifacts\\\\2139c4c6\\\\compilers.arm.armclang\\\\6.23.0\\\\bin\\\\..\\\\include" -nobuiltininc -ferror-limit 19 -fvisibility=hidden -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fsuppress-licensing -aggressive-jump-threading -o CMakeFiles/cmTC_e23f7.dir/CMakeCCompilerABI.o -x c C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Arm Compiler for Embedded 6.23 -cc1 default target aarch64-arm-none-eabi]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:\\Users\\18160\\.vcpkg\\artifacts\\2139c4c6\\compilers.arm.armclang\\6.23.0\\bin\\..\\include]
+        ignore line: [End of search list.\x0d]
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && c:\\Users\\18160\\.vcpkg\\artifacts\\2139c4c6\\compilers.arm.armclang\\6.23.0\\bin\\armar.exe --create -cr libcmTC_e23f7.a  CMakeFiles/cmTC_e23f7.dir/CMakeCCompilerABI.o && cd ."]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+...

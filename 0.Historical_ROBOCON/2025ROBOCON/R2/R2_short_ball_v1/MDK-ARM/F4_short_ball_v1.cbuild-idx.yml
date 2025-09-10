@@ -1,0 +1,18 @@
+build-idx:
+  generated-by: csolution version 2.8.0
+  csolution: F4_short_ball_v1.csolution.yml
+  tmpdir: tmp
+  cprojects:
+    - cproject: F4_short_ball_v1.cproject.yml
+  cbuilds:
+    - cbuild: F4_short_ball_v1+F4_short_ball_v1.cbuild.yml
+      project: F4_short_ball_v1
+      configuration: +F4_short_ball_v1
+      messages:
+        info:
+          - F4_short_ball_v1.cbuild-pack.yml - file is already up-to-date
+          - F4_short_ball_v1+F4_short_ball_v1.cbuild-run.yml - file generated successfully
+          - F4_short_ball_v1+F4_short_ball_v1.cbuild.yml - file is already up-to-date
+      packs-unused:
+        - pack: ARM::CMSIS-DSP@1.15.0
+        - pack: ARM::CMSIS-NN@4.1.0

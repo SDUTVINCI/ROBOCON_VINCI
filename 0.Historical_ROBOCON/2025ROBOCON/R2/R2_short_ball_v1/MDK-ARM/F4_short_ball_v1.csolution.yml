@@ -1,0 +1,10 @@
+solution:
+  created-by: uv2csolution@1.6.0
+  created-for: CMSIS-Toolbox@2.7.0
+  compiler: AC6
+  target-types:
+    - type: F4_short_ball_v1
+      device: STM32F401RCTx
+      optimize: debug
+  projects:
+    - project: F4_short_ball_v1.cproject.yml
